@@ -596,12 +596,6 @@
   .top-\[7\%\] {
     top: 7%;
   }
-  .top-\[10\%\] {
-    top: 10%;
-  }
-  .top-\[20\%\] {
-    top: 20%;
-  }
   .right-3 {
     right: calc(var(--spacing) * 3);
   }
@@ -617,18 +611,6 @@
   .right-40 {
     right: calc(var(--spacing) * 40);
   }
-  .right-\[30\] {
-    right: 30;
-  }
-  .right-\[35\] {
-    right: 35;
-  }
-  .right-\[40\%\] {
-    right: 40%;
-  }
-  .right-\[40\] {
-    right: 40;
-  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
@@ -637,9 +619,6 @@
   }
   .bottom-\[1\%\] {
     bottom: 1%;
-  }
-  .bottom-\[10\%\] {
-    bottom: 10%;
   }
   .bottom-\[10\] {
     bottom: 10;
@@ -682,9 +661,6 @@
   }
   .z-20 {
     z-index: 20;
-  }
-  .z-\[-1\] {
-    z-index: -1;
   }
   .z-auto {
     z-index: auto;
@@ -869,9 +845,6 @@
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
   }
-  .mb-\[4rem\] {
-    margin-bottom: 4rem;
-  }
   .ml-6 {
     margin-left: calc(var(--spacing) * 6);
   }
@@ -1046,23 +1019,17 @@
   .w-\[33\%\] {
     width: 33%;
   }
-  .w-\[40\%\] {
-    width: 40%;
+  .w-\[100vw\] {
+    width: 100vw;
+  }
+  .w-\[400\%\] {
+    width: 400%;
   }
   .w-\[40vw\] {
     width: 40vw;
   }
-  .w-\[45\%\] {
-    width: 45%;
-  }
-  .w-\[47\%\] {
-    width: 47%;
-  }
   .w-\[48\%\] {
     width: 48%;
-  }
-  .w-\[50\%\] {
-    width: 50%;
   }
   .w-\[60vw\] {
     width: 60vw;
@@ -1091,17 +1058,8 @@
   .w-\[95vw\] {
     width: 95vw;
   }
-  .w-\[96vw\] {
-    width: 96vw;
-  }
   .w-\[98vw\] {
     width: 98vw;
-  }
-  .w-\[100vw\] {
-    width: 100vw;
-  }
-  .w-\[400\%\] {
-    width: 400%;
   }
   .w-full {
     width: 100%;
@@ -1824,20 +1782,11 @@
   .bg-\[url\(\'\/images\/banner-1\.jpg\'\)\] {
     background-image: url('/images/banner-1.jpg');
   }
-  .bg-\[url\(\'\/images\/banner-1B\.jpg\'\)\] {
-    background-image: url('/images/banner-1B.jpg');
-  }
-  .bg-\[url\(\'\/images\/hero-banner-2\.jpg\'\)\] {
-    background-image: url('/images/hero-banner-2.jpg');
-  }
   .bg-\[url\(\'\/images\/hero-banner\.jpg\'\)\] {
     background-image: url('/images/hero-banner.jpg');
   }
   .bg-\[url\(\'\/images\/shoe-banner\.jpg\'\)\] {
     background-image: url('/images/shoe-banner.jpg');
-  }
-  .bg-\[url\(\/images\/banner-1\.jpg\)\] {
-    background-image: url(/images/banner-1.jpg);
   }
   .bg-none {
     background-image: none;
@@ -2020,14 +1969,8 @@
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
-  .px-2\.5 {
-    padding-inline: calc(var(--spacing) * 2.5);
-  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
-  }
-  .px-3\.5 {
-    padding-inline: calc(var(--spacing) * 3.5);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -2155,6 +2098,10 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
   }
   .text-\[12px\] {
     font-size: 12px;
