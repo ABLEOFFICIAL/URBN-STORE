@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-neutral-200">
+<body class="bg-neutral-200 relative">
     <!-- news slide start-->
      <div class="news-slide bg-black text-slate-50">
         <div id="info-1" class=" w-[100vw] transition-all duration-300 ease-in-out p-2 text-center text-sm">FREE EXPRESS SHIPPING</div>
@@ -29,6 +29,24 @@
         </nav>
      </div>
     <!-- nav end -->
+
+    <!-- sidebar start -->
+     <aside class=" h-[100vh] w-[40vw] absolute top-0 left-0 z-20 bg-white hidden">
+        <div class="px-5 py-8  h-[30%] justify-between">
+            <div class="text-end mb-3 h-[20%] cursor-pointer">
+                <i class="fa-solid fa-x"></i> 
+            </div>
+            <div class="h-[80%]">
+                <ul class="flex flex-col h-full justify-between font-bold">
+                    <a href="#" class="cursor-pointer hover:bg-neutral-200">HOME</a>
+                    <a href="#" class="cursor-pointer hover:bg-neutral-200">PRODUCTS</a>
+                    <a href="#" class="cursor-pointer hover:bg-neutral-200">CART</a>
+                    <a href="#" class="cursor-pointer hover:bg-neutral-200">ACCOUNT</a>
+                </ul>
+            </div>
+        </div>
+     </aside>
+    <!-- sidebar end -->
 
     <!-- hero start-->
      <section id="hero">
