@@ -587,14 +587,14 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-\[4\%\] {
+    top: 4%;
+  }
+  .top-\[5\%\] {
+    top: 5%;
+  }
   .top-\[7\%\] {
     top: 7%;
-  }
-  .top-\[10\%\] {
-    top: 10%;
-  }
-  .top-\[20\%\] {
-    top: 20%;
   }
   .right-3 {
     right: calc(var(--spacing) * 3);
@@ -611,29 +611,29 @@
   .right-40 {
     right: calc(var(--spacing) * 40);
   }
-  .right-\[30\] {
-    right: 30;
-  }
-  .right-\[35\] {
-    right: 35;
-  }
-  .right-\[40\%\] {
-    right: 40%;
-  }
-  .right-\[40\] {
-    right: 40;
-  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
   .bottom-5 {
     bottom: calc(var(--spacing) * 5);
   }
-  .bottom-\[10\%\] {
-    bottom: 10%;
+  .bottom-\[1\%\] {
+    bottom: 1%;
+  }
+  .bottom-\[10\] {
+    bottom: 10;
   }
   .bottom-\[13\%\] {
     bottom: 13%;
+  }
+  .bottom-\[15\%\] {
+    bottom: 15%;
+  }
+  .bottom-\[1\] {
+    bottom: 1;
+  }
+  .bottom-\[25\%\] {
+    bottom: 25%;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -965,6 +965,12 @@
   .h-\[40vh\] {
     height: 40vh;
   }
+  .h-\[50\%\] {
+    height: 50%;
+  }
+  .h-\[50vh\] {
+    height: 50vh;
+  }
   .h-\[60\%\] {
     height: 60%;
   }
@@ -1010,35 +1016,17 @@
   .w-14 {
     width: calc(var(--spacing) * 14);
   }
+  .w-\[\%\] {
+    width: %;
+  }
+  .w-\[9\%\] {
+    width: 9%;
+  }
   .w-\[33\%\] {
     width: 33%;
   }
   .w-\[40\%\] {
     width: 40%;
-  }
-  .w-\[60vw\] {
-    width: 60vw;
-  }
-  .w-\[70vw\] {
-    width: 70vw;
-  }
-  .w-\[80vw\] {
-    width: 80vw;
-  }
-  .w-\[90vw\] {
-    width: 90vw;
-  }
-  .w-\[93vw\] {
-    width: 93vw;
-  }
-  .w-\[96vw\] {
-    width: 96vw;
-  }
-  .w-\[100vw\] {
-    width: 100vw;
-  }
-  .w-\[400\%\] {
-    width: 400%;
   }
   .w-\[40vw\] {
     width: 40vw;
@@ -1055,8 +1043,26 @@
   .w-\[50\%\] {
     width: 50%;
   }
+  .w-\[60vw\] {
+    width: 60vw;
+  }
+  .w-\[70vw\] {
+    width: 70vw;
+  }
   .w-\[80\%\] {
     width: 80%;
+  }
+  .w-\[80vw\] {
+    width: 80vw;
+  }
+  .w-\[90\%\] {
+    width: 90%;
+  }
+  .w-\[90vw\] {
+    width: 90vw;
+  }
+  .w-\[93vw\] {
+    width: 93vw;
   }
   .w-\[95\%\] {
     width: 95%;
@@ -1064,8 +1070,17 @@
   .w-\[95vw\] {
     width: 95vw;
   }
+  .w-\[96vw\] {
+    width: 96vw;
+  }
   .w-\[98vw\] {
     width: 98vw;
+  }
+  .w-\[100vw\] {
+    width: 100vw;
+  }
+  .w-\[400\%\] {
+    width: 400%;
   }
   .w-full {
     width: 100%;
@@ -1791,9 +1806,6 @@
   .bg-\[url\(\'\/images\/banner-1B\.jpg\'\)\] {
     background-image: url('/images/banner-1B.jpg');
   }
-  .bg-\[url\(\'\/images\/hero-banner-2\.jpg\'\)\] {
-    background-image: url('/images/hero-banner-2.jpg');
-  }
   .bg-\[url\(\'\/images\/hero-banner\.jpg\'\)\] {
     background-image: url('/images/hero-banner.jpg');
   }
@@ -1983,9 +1995,6 @@
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
-  }
-  .px-2\.5 {
-    padding-inline: calc(var(--spacing) * 2.5);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
