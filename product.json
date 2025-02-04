@@ -1,0 +1,176 @@
+[
+    {
+        "id": "1",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/bag-1.jpg"
+    },
+    {
+        "id": "2",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/bag-2.jpg"
+    },
+    {
+        "id": "3",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/bag-3.jpg"
+    },
+    {
+        "id": "4",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/bag-4.jpg"
+    },
+    {
+        "id": "5",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/bag-5.jpg"
+    },
+    {
+        "id": "6",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/black polo.jpg"
+    },
+    {
+        "id": "7",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/blue polo.jpg"
+    },
+    {
+        "id": "8",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/brown polo.jpg"
+    },
+    {
+        "id": "9",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/gray-tshirt.jpg"
+    },
+    {
+        "id": "10",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/green polo.jpg"
+    },
+    {
+        "id": "11",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/jean-1.jpg"
+    },
+    {
+        "id": "12",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/jean-2.jpg"
+    },
+    {
+        "id": "13",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/jean-3.jpg"
+    },
+    {
+        "id": "14",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/jean-4.jpg"
+    },
+    {
+        "id": "15",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/red polo.jpg"
+    },
+    {
+        "id": "16",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/sweater--2.jpg"
+    },
+    {
+        "id": "17",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/sweater--3.jpg"
+    },
+    {
+        "id": "18",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/sweater-1.jpg"
+    },
+    {
+        "id": "19",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/sweater-4.jpg"
+    },
+    {
+        "id": "20",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/sweater-5.jpg"
+    },
+    {
+        "id": "21",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/vin-1.jpg"
+    },
+    {
+        "id": "22",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/vin-2.jpg"
+    },
+    {
+        "id": "23",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/vin-3.jpg"
+    },
+    {
+        "id": "24",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/vin-4.jpg"
+    },
+    {
+        "id": "25",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/vin-5.jpg"
+    },
+    {
+        "id": "26",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/vin-6.jpg"
+    },
+    {
+        "id": "27",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/white polo.jpg"
+    },
+    {
+        "id": "28",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/white tshirt.jpg"
+    },
+    {
+        "id": "29",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/yellow tshirt .jpg"
+    }
+]

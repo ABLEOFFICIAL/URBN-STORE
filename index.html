@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-  <link href="./output.css" rel="stylesheet">
+  <link href="./src/output.css" rel="stylesheet">
 </head>
 <body class="bg-neutral-200 relative">
     <!-- news slide start-->
@@ -19,7 +19,7 @@
      <div>
         <nav class="list-none flex justify-between w-[90vw] m-auto bg-slate-50 rounded-4xl p-3 items-center fixed left-5 bottom-5 z-20">
             <div class="flex w-[33%] justify-between items-center bg-black text-slate-50 rounded-4xl py-2 px-4">
-                <li><i class="fa-solid fa-bars cursor-pointer"></i></li>
+                <li id="side-bar-btn"><i class="fa-solid fa-bars cursor-pointer"></i></li>
                 <li class="cursor-pointer">Menu</li>
             </div>
             <li><i class="fa-solid fa-magnifying-glass cursor-pointer"></i></li>
@@ -31,15 +31,21 @@
     <!-- nav end -->
 
     <!-- sidebar start -->
-     <aside class=" h-[100vh] w-[40vw] absolute top-0 left-0 z-20 bg-white hidden">
-        <div class="px-5 py-8  h-[30%] justify-between">
+     <aside id="side-bar" class=" h-[100vh] w-[80vw] fixed top-0 left-0 z-20 bg-white hidden">
+        <div class="px-5 py-8  h-[35%] justify-between">
             <div class="text-end mb-3 h-[20%] cursor-pointer">
-                <i class="fa-solid fa-x"></i> 
+                <i id="x-btn" class="fa-solid fa-x pr-5 text-3xl"></i> 
             </div>
             <div class="h-[80%]">
                 <ul class="flex flex-col h-full justify-between font-bold">
                     <a href="#" class="cursor-pointer hover:bg-neutral-200">HOME</a>
-                    <a href="#" class="cursor-pointer hover:bg-neutral-200">PRODUCTS</a>
+                    <a id="products" href="#" class="cursor-pointer hover:bg-neutral-200">PRODUCTS</a>
+
+                    <div id="product-category" class="hidden font-bold ml-6">
+                        <li href="#" class="mb-2">MEN</li>
+                        <li href="#" class="">WOMEN</li>
+                    </div>
+
                     <a href="#" class="cursor-pointer hover:bg-neutral-200">CART</a>
                     <a href="#" class="cursor-pointer hover:bg-neutral-200">ACCOUNT</a>
                 </ul>
