@@ -596,12 +596,6 @@
   .top-\[7\%\] {
     top: 7%;
   }
-  .top-\[10\%\] {
-    top: 10%;
-  }
-  .top-\[20\%\] {
-    top: 20%;
-  }
   .right-3 {
     right: calc(var(--spacing) * 3);
   }
@@ -617,18 +611,6 @@
   .right-40 {
     right: calc(var(--spacing) * 40);
   }
-  .right-\[30\] {
-    right: 30;
-  }
-  .right-\[35\] {
-    right: 35;
-  }
-  .right-\[40\%\] {
-    right: 40%;
-  }
-  .right-\[40\] {
-    right: 40;
-  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
@@ -637,9 +619,6 @@
   }
   .bottom-\[1\%\] {
     bottom: 1%;
-  }
-  .bottom-\[10\%\] {
-    bottom: 10%;
   }
   .bottom-\[10\] {
     bottom: 10;
@@ -1827,9 +1806,6 @@
   .bg-\[url\(\'\/images\/banner-1B\.jpg\'\)\] {
     background-image: url('/images/banner-1B.jpg');
   }
-  .bg-\[url\(\'\/images\/hero-banner-2\.jpg\'\)\] {
-    background-image: url('/images/hero-banner-2.jpg');
-  }
   .bg-\[url\(\'\/images\/hero-banner\.jpg\'\)\] {
     background-image: url('/images/hero-banner.jpg');
   }
@@ -2019,9 +1995,6 @@
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
-  }
-  .px-2\.5 {
-    padding-inline: calc(var(--spacing) * 2.5);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
