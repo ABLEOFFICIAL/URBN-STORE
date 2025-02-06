@@ -62,9 +62,3 @@ products.addEventListener('click', () => {
     // productCategory.classList.add('flex');
 })
 
-// direct to mens product event
-men.addEventListener('click', showMenWear);
-// to men event
-showMenWear = () => {
-    window.location.href = './product/productM.html';
-}

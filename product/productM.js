@@ -1,6 +1,9 @@
 // product page
 let productsBox = document.getElementById('products-box');
+// search bar background
 let seacrhCtn = document.getElementById('seacrh-ctn');
+// back button
+let backBtn = document.getElementById('back-btn');
 
 let productList = [];
 // display products dynamically
@@ -38,4 +41,8 @@ window.addEventListener('scroll', function(){
     }else{
         seacrhCtn.classList.remove('bg-white', 'shadow-2xl');  
     }
+})
+// add back btn event
+backBtn.addEventListener('click', () => {
+    window.location.href = '../index.html';
 })
