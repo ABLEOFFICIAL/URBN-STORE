@@ -24,7 +24,7 @@
             </div>
             <li><i class="fa-solid fa-magnifying-glass cursor-pointer"></i></li>
             <li><i class="fa-regular fa-user cursor-pointer"></i></li>
-            <li class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"/></svg> </li>
+            <li id="cart-icon" class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"/></svg> </li>
             <li class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3 20.59L6.59 17H18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zM3 22H2V6a3 3 0 0 1 3-3h13a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H7zM6 7h11v1H6zm0 3h11v1H6zm0 3h8v1H6z"/></svg></li>
         </nav>
      </div>
@@ -32,7 +32,7 @@
 
     <!-- sidebar start -->
      <aside id="side-bar" class=" h-[100vh] w-[80vw] fixed top-0 left-0 z-20 bg-white hidden">
-        <div class="px-5 py-8  h-[35%] justify-between">
+        <div class="px-5 py-8  h-[35%]">
             <div class="text-end mb-3 h-[20%] cursor-pointer">
                 <i id="x-btn" class="fa-solid fa-x pr-5 text-3xl"></i> 
             </div>
@@ -53,6 +53,20 @@
         </div>
      </aside>
     <!-- sidebar end -->
+
+    <!-- cart section start -->
+     <aside id="cart-sctn" class=" h-[100vh] w-[90vw] fixed top-0 right-0 z-20 bg-neutral-200 hidden">
+        <div class="p-5 flex justify-between w-[90vw] m-auto">
+            <h2 class="font-bold text-3xl">Cart</h2>
+            <i id="x-btn" class="fa-solid fa-x pr-5 text-3xl"></i>
+        </div><hr class="w-[90%] m-auto">
+        <div class="flex flex-col h-[60vh] justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"><path fill="currentColor" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"/></svg>
+            <span class="font-bold text-xl">Cart Is Empty</span>
+        </div>
+
+     </aside>
+    <!-- cart section end -->
 
     <!-- hero start-->
      <section id="hero">

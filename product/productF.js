@@ -1,4 +1,5 @@
-// product page
+document.addEventListener("DOMContentLoaded", function () {
+    // product page
 let productsBox = document.getElementById('products-box');
 // search bar background
 let seacrhCtn = document.getElementById('seacrh-ctn');
@@ -44,4 +45,5 @@ window.addEventListener('scroll', function(){
 // add back btn event
 backBtn.addEventListener('click', () => {
     window.location.href = '../index.html';
+})
 })

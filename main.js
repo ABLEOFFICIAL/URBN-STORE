@@ -9,8 +9,11 @@ let xBtn = document.getElementById('x-btn');
 let products = document.getElementById('products');
 let productCategory = document.getElementById('product-category');
 // direct to mens product params
-let men = document.getElementById('men')
-let women = document.getElementById('women')
+let men = document.getElementById('men');
+let women = document.getElementById('women');
+// open cart section
+let cartSctn = document.getElementById('cart-sctn');
+let cartIcon = document.getElementById('cart-icon');
 
 
 
@@ -53,6 +56,7 @@ xBtn.addEventListener('click', removeSideBar);
 document.addEventListener('click', (event) => {
    if(!sideBarBtn.contains(event.target) && !sideBar.contains(event.target)){
     sideBar.classList.add('hidden');
+    cartSctn.classList.add('hidden');
    }
 });
 
@@ -62,3 +66,7 @@ products.addEventListener('click', () => {
     // productCategory.classList.add('flex');
 })
 
+// cart section event
+cartIcon.addEventListener('click', () => {
+    cartSctn.classList.remove('hidden');
+});

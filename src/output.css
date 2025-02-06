@@ -596,6 +596,9 @@
   .top-\[40\%\] {
     top: 40%;
   }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
   .right-\[16\%\] {
     right: 16%;
   }
@@ -908,11 +911,17 @@
   .h-\[60vh\] {
     height: 60vh;
   }
+  .h-\[70vh\] {
+    height: 70vh;
+  }
   .h-\[80\%\] {
     height: 80%;
   }
   .h-\[80vh\] {
     height: 80vh;
+  }
+  .h-\[90vh\] {
+    height: 90vh;
   }
   .h-full {
     height: 100%;
@@ -967,6 +976,9 @@
   }
   .w-\[93vw\] {
     width: 93vw;
+  }
+  .w-\[95\%\] {
+    width: 95%;
   }
   .w-\[95vw\] {
     width: 95vw;
@@ -1072,6 +1084,10 @@
   .translate-full {
     --tw-translate-x: 100%;
     --tw-translate-y: 100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-x-10 {
+    --tw-translate-x: calc(var(--spacing) * 10);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-z-px {
@@ -1973,6 +1989,10 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .text-xs {
     font-size: var(--text-xs);
