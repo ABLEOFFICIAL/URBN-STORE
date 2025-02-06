@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="../src/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-200 relative">
+    <div class="relative h-[100vh] overflow-hidden text-white p-6 before:absolute before:content-[''] before:bg-black before:h-[95vh] before:w-[100%] before:top-0 before:right-0 before:rounded-bl-full
+    
+    after:absolute after:content-[''] after:bg-neutral-400 after:h-[15vh] after:w-[35%] after:bottom-0 after:left-0 after:rounded-tr-full">
+        <div class="relative z-20">
+            <img src="../images/logo-removebg-preview (2).png" class="w-[13rem] left-40 relative h-[15vh] object-cover">
+        </div>
+        <div>
+            <h1 class="relative z-20 font-bold text-xl">CREATE ACCOUNT</h1>
+            <form class="relative z-20 my-5  gap-5 w-[80vw] m-auto">
+                <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none mb-4" type="text" placeholder="Full Name" id="full-name">
+                <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none mb-4" type="email" placeholder="Email" id="email">
+                <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none mb-4" type="password" placeholder="Password" id="password">
+                <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none mb-4" type="password" placeholder="Confirm Password" id="confirm-password">
+                <div class="flex justify-center items-center">
+                    <input class="bg-transparent border-2 border-white text-white w-[45%] rounded-full p-1.5 mt-5" type="submit" value="SIGN UP" id="sign-in-btn">
+                </div>
+
+            </form>
+            <p class="relative z-20 font-bold text-center text-neutral-400">Already Have An Account? <br><span class="text-white"><a href="../login/login.html">SIGN IN</a></span></p>
+        </div>
+    </div>
+    
+
+    <script src="login.js"></script>
+</body>
+</html>
