@@ -8,6 +8,11 @@ let xBtn = document.getElementById('x-btn');
 // product listing category
 let products = document.getElementById('products');
 let productCategory = document.getElementById('product-category');
+// direct to mens product params
+let men = document.getElementById('men')
+let women = document.getElementById('women')
+
+
 
 // newsletter animation
 window.addEventListener('load', () => {
@@ -38,6 +43,7 @@ function showSideBar(){
 }
 sideBarBtn.addEventListener('click', showSideBar);
 
+
 // remove side bar
 function removeSideBar(event){
     event.stopPropagation();
@@ -56,3 +62,9 @@ products.addEventListener('click', () => {
     // productCategory.classList.add('flex');
 })
 
+// direct to mens product event
+men.addEventListener('click', showMenWear);
+// to men event
+showMenWear = () => {
+    window.location.href = './product/productM.html';
+}

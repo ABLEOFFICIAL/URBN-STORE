@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/bag-1.jpg"
+    },
+    {
+        "id": "2",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/bag-2.jpg"
+    },
+    {
+        "id": "3",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/bag-3.jpg"
+    },
+    {
+        "id": "4",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/bag-4.jpg"
+    },
+    {
+        "id": "5",
+        "name": "John",
+        "price": "$95",
+        "image": "/images/bag-5.jpg"
+    }
+]
