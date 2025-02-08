@@ -13,8 +13,9 @@ form.addEventListener('submit', (e) => {
             e.preventDefault();
             function error(){
                 let alertError = document.createElement('p');
+                alertError.textContent = 'i'
                 // alertError.className = 'fa-solid fa-circle-exclamation';
-                alertError.classList.add('text-red-500', 'absolute', 'top-1', 'right-0', 'border-2', 'rounded-full', 'p-2');
+                alertError.classList.add('text-red-500', 'absolute', 'top-1', 'right-3', 'border-2', 'border-red-500', 'rounded-full', 'px-2.5', 'py-1', 'text-xs', 'text-center');
                 input.parentElement.appendChild(alertError);
                 setTimeout(() => {
                     alertError.remove();
