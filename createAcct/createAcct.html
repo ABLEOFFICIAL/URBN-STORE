@@ -16,13 +16,21 @@
         </div>
         <div>
             <h1 class="relative z-20 font-bold text-xl">CREATE ACCOUNT</h1>
-            <form class="relative z-20 my-5  gap-5 w-[80vw] m-auto">
-                <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none mb-4" type="text" placeholder="Full Name" id="full-name">
-                <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none mb-4" type="email" placeholder="Email" id="email">
-                <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none mb-4" type="password" placeholder="Password" id="password">
-                <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none mb-4" type="password" placeholder="Confirm Password" id="confirm-password">
+            <form id="form" class="relative z-20 my-5  gap-5 w-[80vw] m-auto">
+                <div class="relative">
+                    <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none mb-4" type="text" placeholder="Full Name" id="full-name">  
+                </div>
+                <div class="relative">
+                    <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none mb-4" type="email" placeholder="Email" id="email"> 
+                </div>
+                <div class="relative">
+                    <input class="bg-white  rounded-full block w-full py-2 px-4 text-black outline-none mb-4" type="password" placeholder="Password" id="password"> 
+                </div>
+                <div class="relative">
+                    <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none mb-4" type="password" placeholder="Confirm Password" id="confirm-password">
+                </div>
                 <div class="flex justify-center items-center">
-                    <input class="bg-transparent border-2 border-white text-white w-[45%] rounded-full p-1.5 mt-5" type="submit" value="SIGN UP" id="sign-in-btn">
+                    <input class="bg-transparent border-2 border-white text-white w-[45%] rounded-full p-1.5 mt-5" type="submit" value="SIGN UP" id="sign-up-btn">
                 </div>
 
             </form>
@@ -31,6 +39,6 @@
     </div>
     
 
-    <script src="login.js"></script>
+    <script src="createAcct.js"></script>
 </body>
 </html>
