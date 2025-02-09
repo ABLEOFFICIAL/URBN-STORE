@@ -590,6 +590,15 @@
   .top-1 {
     top: calc(var(--spacing) * 1);
   }
+  .top-2 {
+    top: calc(var(--spacing) * 2);
+  }
+  .top-2\.5 {
+    top: calc(var(--spacing) * 2.5);
+  }
+  .top-3 {
+    top: calc(var(--spacing) * 3);
+  }
   .top-\[4\%\] {
     top: 4%;
   }
@@ -607,6 +616,12 @@
   }
   .right-3 {
     right: calc(var(--spacing) * 3);
+  }
+  .right-4 {
+    right: calc(var(--spacing) * 4);
+  }
+  .right-10 {
+    right: calc(var(--spacing) * 10);
   }
   .right-\[16\%\] {
     right: 16%;
@@ -947,23 +962,23 @@
   .w-14 {
     width: calc(var(--spacing) * 14);
   }
-  .w-\[33\%\] {
-    width: 33%;
-  }
-  .w-\[48\%\] {
-    width: 48%;
-  }
   .w-\[100vw\] {
     width: 100vw;
   }
   .w-\[13rem\] {
     width: 13rem;
   }
+  .w-\[33\%\] {
+    width: 33%;
+  }
   .w-\[400\%\] {
     width: 400%;
   }
   .w-\[45\%\] {
     width: 45%;
+  }
+  .w-\[48\%\] {
+    width: 48%;
   }
   .w-\[50\%\] {
     width: 50%;
@@ -2122,11 +2137,17 @@
   .text-neutral-400 {
     color: var(--color-neutral-400);
   }
+  .text-neutral-600 {
+    color: var(--color-neutral-600);
+  }
   .text-red-500 {
     color: var(--color-red-500);
   }
   .text-slate-50 {
     color: var(--color-slate-50);
+  }
+  .text-slate-600 {
+    color: var(--color-slate-600);
   }
   .text-slate-800 {
     color: var(--color-slate-800);
