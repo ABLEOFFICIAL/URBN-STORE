@@ -37,7 +37,7 @@ form.addEventListener('submit', (e) => {
         else if(!passwordFormat.test(inputs[2].value)){
             error(inputs[2], 'i');
         }
-        else if(inputs[1].value.trim() !== inputs[3].value.trim()){
+        else if(inputs[2].value.trim() !== inputs[3].value.trim()){
             e.preventDefault();
             error(inputs[3], 'i');
         }else {
