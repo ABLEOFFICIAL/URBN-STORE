@@ -971,8 +971,20 @@
   .w-14 {
     width: calc(var(--spacing) * 14);
   }
+  .w-\[100vw\] {
+    width: 100vw;
+  }
+  .w-\[13rem\] {
+    width: 13rem;
+  }
   .w-\[33\%\] {
     width: 33%;
+  }
+  .w-\[400\%\] {
+    width: 400%;
+  }
+  .w-\[45\%\] {
+    width: 45%;
   }
   .w-\[48\%\] {
     width: 48%;
@@ -1003,18 +1015,6 @@
   }
   .w-\[95vw\] {
     width: 95vw;
-  }
-  .w-\[100vw\] {
-    width: 100vw;
-  }
-  .w-\[13rem\] {
-    width: 13rem;
-  }
-  .w-\[400\%\] {
-    width: 400%;
-  }
-  .w-\[45\%\] {
-    width: 45%;
   }
   .w-full {
     width: 100%;

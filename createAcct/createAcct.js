@@ -43,13 +43,16 @@ form.addEventListener('submit', (e) => {
         }else {
             // next page to login after registeration
             window.location.href = '../login/login.html';
+            // save to local storage
+            localStorage.setItem('user', JSON.stringify({
+                name: fullName.value.trim(),
+                email: email.value.trim(),
+                password: password.value.trim()
+            }))
         }
         })
 
-        // save to local storage
-        localStorage.setItem('user', JSON.stringify({
-            fullName, email, password
-        }))
+
    
     })
 
