@@ -13,7 +13,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     let inputs = [fullName, email, password, confirmPassword];
     const emailFormat = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const passwordFormat = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    const passwordFormat = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,}$/;
 
     // error function
     function error(label, message){
@@ -47,10 +47,10 @@ form.addEventListener('submit', (e) => {
         })
 
         // save to local storage
-        localStorage.setItem('fullname', fullName.value);
-        localStorage.setItem('email', email.value);
-        localStorage.setItem('password', password.value);
-    
+        localStorage.setItem('user', JSON.stringify({
+            fullName, email, password
+        }))
+   
     })
 
     // show password event

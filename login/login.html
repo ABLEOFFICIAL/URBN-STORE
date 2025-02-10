@@ -16,12 +16,27 @@
         </div>
         <div>
             <h1 class="relative z-20 font-bold text-xl">SIGN IN</h1>
-            <form class="relative z-20 my-5 flex flex-col justify-center items-center gap-5 w-[80vw] m-auto">
-                <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none" type="email" placeholder="Email" id="email">
-                <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none" type="password" placeholder="Password" id="password">
-                <input class="bg-transparent border-2 border-white text-white w-[45%] rounded-full p-1.5 mt-5" type="submit" value="SIGN IN" id="sign-in-btn">
+            <form id="form" class="relative z-20 my-5 justify-center items-center gap-5 w-[80vw] m-auto">
+                <div>
+                    <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none mb-4" type="email" placeholder="Email" id="email">
+                </div>
+                <div class="relative">
+                    <input class="bg-white rounded-full block w-full py-2 px-4 text-black outline-none" type="password" placeholder="Password" id="password">
+                    <div id="show-password" class="cursor-pointer">
+                        <i  class="fa-regular fa-eye top-3 right-10 text-neutral-600 absolute"></i>
+                    </div>
+                    <div id="hide-password" class="hidden cursor-pointer">
+                        <i class="fa-regular fa-eye-slash top-3 right-10 text-neutral-600 absolute"></i>
+                    </div>                    
+                </div>
+                <!-- invalid user -->
+                <div id="not-found"></div>
+
+                <div class="flex justify-center items-center">
+                    <input class="bg-transparent border-2 border-white text-white w-[45%] rounded-full p-1.5 mt-7" type="submit" value="SIGN IN" id="sign-in-btn">                
+                </div>
             </form>
-            <p class="relative z-20 font-bold text-center text-neutral-400">Don't have an account? <span class="text-white"><a href="../createAcct/createAcct.html">SIGN UP</a></span></p>
+            <p class="relative z-20 font-bold text-center text-neutral-400">Don't have an account?<span class="text-white"><a href="../createAcct/createAcct.html">SIGN UP</a></span></p>
         </div>
     </div>
     
