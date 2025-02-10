@@ -47,15 +47,11 @@ form.addEventListener('submit', (e) => {
             alertSuccess.classList.add('absolute', 'top-0', 'left-[20%]', 'h-[15vh]', 'mt-7', 'w-[60%]', 'p-5', 'border-0', 'rounded', 'bg-white', 'text-white', 'flex', 'justify-center', 'items-center', 'transform', 'translate-y-5', 'transition-all');
             alertSuccess.innerHTML = `
             <p class = 'text-black text-sm font-bold'>Account Created Successfully</p>`;
-            // alertSuccess.style.top = `${window.scrollY}px`;
             document.body.appendChild(alertSuccess);
             setTimeout(() => {
-                // alertSuccess.remove();
-                            // next page to login after registeration
-            window.location.href = '../login/login.html';
+                // next page to login after registeration
+                window.location.href = '../login/login.html';
             }, 2000)
-
-            console.log(alertSuccess);
             
 
 

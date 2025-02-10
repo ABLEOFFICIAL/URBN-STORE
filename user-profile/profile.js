@@ -1,39 +1,25 @@
-            // function error(){
-            //     let alertError = document.createElement('p');
-            //     alertError.textContent = 'i'
-            //     // alertError.className = 'fa-solid fa-circle-exclamation';
-            //     alertError.classList.add('text-red-500', 'absolute', 'top-1', 'right-3', 'border-2', 'border-red-500', 'rounded-full', 'px-2.5', 'py-1', 'text-xs', 'text-center');
-            //     input.parentElement.appendChild(alertError);
-            //     setTimeout(() => {
-            //         alertError.remove();
-            //     }, 2000)
-            // };
+// back button
+let backBtn = document.getElementById('back-btn');
+// get user details from local storage
+let userProfile = JSON.parse(localStorage.getItem('user'));
+// user details
+let userName = document.getElementById('user-name');
+let userEmail = document.getElementById('user-email');
+let userBlock = document.getElementById('user-block');
 
+// add back btn event
+backBtn.addEventListener('click', () => {
+    window.location.href = '../index.html';
+})
 
-                    // else if(!emailFormat.test(inputs[1].value)){
-        //     e.preventDefault();
-        //     function error(){
-        //         let alertError = document.createElement('p');
-        //         alertError.textContent = 'invalid email';
-        //         alertError.classList.add('text-red-500', 'absolute', 'top-1', 'right-3', 'border-2', 'border-red-500', 'rounded-full', 'px-2.5', 'py-1', 'text-xs', 'text-center');
-        //         input[1].parentElement.appendChild(alertError);
-        //         setTimeout(() => {
-        //             alertError.remove();
-        //         }, 2000)
-        //     };
-            
-        //     error();
-                    
-        // }
-
-
-
-
-                        <div class=" flex justify-center">
+// function to display user details
+function displayUserDetails(){
+    userBlock.innerHTML = `
+                    <div class=" flex justify-center">
                     <i class="fa-regular fa-user text-white bg-black text-4xl border-0 rounded-full p-6 mb-3"></i>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <p id="user-name" class="font-bold">FULL NAME</p>
+                    <p id="user-name" class="font-bold">${userProfile.name}</p>
                 </div>
                 <div class="mt-5">
                     <!-- email box -->
@@ -41,7 +27,7 @@
                         <div><i class="fa-regular fa-envelope text-3xl"></i></div>
                         <div>
                             <h4 class="font-bold text-lg">Email Address</h4>
-                            <span id="user-email" class="text-neutral-600">emailaddress@gmail.com</span>
+                            <span id="user-email" class="text-neutral-600">${userProfile.email}</span>
                         </div>
                         <div>
                             <i class="fa-solid fa-pen"></i>
@@ -69,4 +55,7 @@
                             <i class="fa-solid fa-pen"></i>
                         </div>
                     </div>
-                </div>
+                </div>`;
+}
+
+displayUserDetails();

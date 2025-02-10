@@ -15,6 +15,8 @@ let women = document.getElementById('women');
 let cartSctn = document.querySelector('#cart-sctn');
 let cartIcon = document.querySelector('#cart-icon');
 let cart = document.querySelector('#cart');
+// user account
+let account = document.querySelector('#account');
 
 
 
@@ -77,3 +79,13 @@ cart.addEventListener('click', showCart);
 function showCart() {
     cartSctn.classList.remove('hidden');  
 };
+
+
+// home when logged in 
+let getUser = JSON.parse(localStorage.getItem('user'));
+console.log(getUser);
+
+// check if user is logged in
+if (getUser){
+    account.href = './user-profile/profile.html';
+}

@@ -47,12 +47,6 @@ form.addEventListener('submit', (e) => {
             notFoundMessage.classList.add('hidden');
         }, 2000)
     }
-    // else if(!storedDetails) {
-    //     let notFoundMessage = document.createElement('span');
-    //     notFoundMessage.classList.add('text-neutral-600', 'mt-3', 'text-center');
-    //     notFoundMessage.textContent = 'User not found!!!';
-    //     notFound.appendChild(notFoundMessage);
-    // }
     else if((email.value === storedDetails.email) &&(password.value !== storedDetails.password)){
         error(password, 'i');
         password.classList.add('border-2', 'border-red-500');
@@ -61,8 +55,18 @@ form.addEventListener('submit', (e) => {
         }, 2000)
     }
     else if((email.value === storedDetails.email) && (password.value === storedDetails.password)){
-        alert('Login Successfull!!!');
-        window.location.href = '../index.html';
+        // alert('Login Successfull!!!');
+        // show alert
+        let alertSuccess = document.createElement('div');
+        alertSuccess.classList.add('absolute', 'top-0', 'left-[20%]', 'h-[15vh]', 'mt-7', 'w-[60%]', 'p-5', 'border-0', 'rounded', 'bg-white', 'text-white', 'flex', 'justify-center', 'items-center', 'transform', 'translate-y-5', 'transition-all');
+        alertSuccess.innerHTML = `
+                    <p class = 'text-black text-sm font-bold'>Login Successful</p>`;
+        document.body.appendChild(alertSuccess);
+        setTimeout(() => {
+            // next page to login after registeration
+            window.location.href = '../index.html';
+        }, 2000)
+
     }
     
 
