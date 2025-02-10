@@ -41,14 +41,31 @@ form.addEventListener('submit', (e) => {
             e.preventDefault();
             error(inputs[3], 'i');
         }else {
-            // next page to login after registeration
+            e.preventDefault();
+            // show alert
+            let alertSuccess = document.createElement('div');
+            alertSuccess.classList.add('absolute', 'top-0', 'left-[20%]', 'h-[15vh]', 'mt-7', 'w-[60%]', 'p-5', 'border-0', 'rounded', 'bg-white', 'text-white', 'flex', 'justify-center', 'items-center', 'transform', 'translate-y-5', 'transition-all');
+            alertSuccess.innerHTML = `
+            <p class = 'text-black text-sm font-bold'>Account Created Successfully</p>`;
+            // alertSuccess.style.top = `${window.scrollY}px`;
+            document.body.appendChild(alertSuccess);
+            setTimeout(() => {
+                // alertSuccess.remove();
+                            // next page to login after registeration
             window.location.href = '../login/login.html';
+            }, 2000)
+
+            console.log(alertSuccess);
+            
+
+
             // save to local storage
             localStorage.setItem('user', JSON.stringify({
                 name: fullName.value.trim(),
                 email: email.value.trim(),
                 password: password.value.trim()
             }))
+
         }
         })
 
@@ -73,3 +90,5 @@ form.addEventListener('submit', (e) => {
         })
     })
 })
+
+console.log(document.body);
