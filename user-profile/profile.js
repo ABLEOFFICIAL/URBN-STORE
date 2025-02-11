@@ -27,7 +27,7 @@ function displayUserDetails(){
                         <div><i class="fa-regular fa-envelope text-3xl"></i></div>
                         <div>
                             <h4 class="font-bold text-lg">Email Address</h4>
-                            <span id="user-email" class="text-neutral-600">${userProfile.email}</span>
+                            <span id="user-email" class="text-neutral-600 text-[12px]">${userProfile.email}</span>
                         </div>
                         <div>
                             <i class="fa-solid fa-pen"></i>

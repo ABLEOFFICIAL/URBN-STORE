@@ -2106,6 +2106,9 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .text-\[12px\] {
+    font-size: 12px;
+  }
   .text-\[13\.5px\] {
     font-size: 13.5px;
   }
