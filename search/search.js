@@ -10,11 +10,16 @@ fetch('../productAll.json')
     searchProduct.addEventListener('input', () => {
         let searchValue = searchProduct.value;
         let searchedInput = searchValue.toLowerCase();
-        let searchResult = products.filter(product => 
-            product.name.toLowerCase().includes(searchedInput)
-        )
-        console.log(searchResult);
-        displaySearchedInput(searchResult);
+
+        if(searchedInput === ''){
+            filteredProducts.innerHTML = '';
+        }else{
+            let searchResult = products.filter(product => 
+                product.name.toLowerCase().includes(searchedInput)
+            );
+            displaySearchedInput(searchResult);
+        }
+
     })
 
     function displaySearchedInput(items){

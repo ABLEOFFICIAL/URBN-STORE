@@ -932,6 +932,9 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
@@ -998,29 +1001,11 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
   .w-14 {
     width: calc(var(--spacing) * 14);
-  }
-  .w-\[5rem\] {
-    width: 5rem;
-  }
-  .w-\[7rem\] {
-    width: 7rem;
-  }
-  .w-\[33\%\] {
-    width: 33%;
-  }
-  .w-\[60\%\] {
-    width: 60%;
-  }
-  .w-\[100vw\] {
-    width: 100vw;
-  }
-  .w-\[13rem\] {
-    width: 13rem;
-  }
-  .w-\[400\%\] {
-    width: 400%;
   }
   .w-\[45\%\] {
     width: 45%;
@@ -1031,11 +1016,29 @@
   .w-\[50\%\] {
     width: 50%;
   }
+  .w-\[5rem\] {
+    width: 5rem;
+  }
+  .w-\[60\%\] {
+    width: 60%;
+  }
   .w-\[60vw\] {
     width: 60vw;
   }
   .w-\[70vw\] {
     width: 70vw;
+  }
+  .w-\[7rem\] {
+    width: 7rem;
+  }
+  .w-\[33\%\] {
+    width: 33%;
+  }
+  .w-\[100vw\] {
+    width: 100vw;
+  }
+  .w-\[13rem\] {
+    width: 13rem;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -1054,6 +1057,9 @@
   }
   .w-\[95vw\] {
     width: 95vw;
+  }
+  .w-\[400\%\] {
+    width: 400%;
   }
   .w-full {
     width: 100%;
@@ -2056,6 +2062,12 @@
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
+  .pl-1 {
+    padding-left: calc(var(--spacing) * 1);
+  }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
+  }
   .text-center {
     text-align: center;
   }
@@ -2646,6 +2658,9 @@
   }
   .forced-color-adjust-none {
     forced-color-adjust: none;
+  }
+  .\[iH�\]u�\]F\6 j\{��U�v���U��S\14 C\;�a�Y�5��\1e \13 \7f �\1f D뫐\e �\<7\$�\12 �_\:b\] {
+    iH�]u�]Fj{��U�v���U��SC;�a�Y�5���D뫐 <7$��_: b;
   }
   .\[keywords\:node-addon-api\] {
     keywords: node-addon-api;

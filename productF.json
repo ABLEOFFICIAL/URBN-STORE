@@ -28,5 +28,29 @@
         "name": "Fendi",
         "price": "$95",
         "image": "/images/bag-5.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Blue Heels",
+        "price": "$95",
+        "image": "/images/blue heels.jpg"
+    },
+    {
+        "id": "7",
+        "name": "Nike Jordan",
+        "price": "$95",
+        "image": "/images/nike jordan.jpg"
+    },
+    {
+        "id": "8",
+        "name": "Red Heels",
+        "price": "$95",
+        "image": "/images/red heels.jpg"
+    },
+    {
+        "id": "9",
+        "name": "White Heels",
+        "price": "$95",
+        "image": "/images/white heels.jpg"
     }
 ]

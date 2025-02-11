@@ -142,5 +142,35 @@
         "name": "yellow tshirt",
         "price": "$95",
         "image": "/images/yellow tshirt.jpg"
+    },
+    {
+        "id": "30",
+        "name": "black Nike",
+        "price": "$95",
+        "image": "/images/black polo.jpg"
+    },
+    {
+        "id": "31",
+        "name": "canvas",
+        "price": "$95",
+        "image": "/images/canvas.jpg"
+    },
+    {
+        "id": "32",
+        "name": "green sneaker",
+        "price": "$95",
+        "image": "/images/green sneaker.jpg"
+    },
+    {
+        "id": "33",
+        "name": "red sneaker",
+        "price": "$95",
+        "image": "/images/red sneaker.jpg"
+    },
+    {
+        "id": "34",
+        "name": "yellow sneaker",
+        "price": "$95",
+        "image": "/images/yellow sneaker.jpg"
     }
 ]
