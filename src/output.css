@@ -938,6 +938,12 @@
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
+  .h-\[4rem\] {
+    height: 4rem;
+  }
+  .h-\[7rem\] {
+    height: 7rem;
+  }
   .h-\[100vh\] {
     height: 100vh;
   }
@@ -1004,17 +1010,11 @@
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
   .w-14 {
     width: calc(var(--spacing) * 14);
-  }
-  .w-\[45\%\] {
-    width: 45%;
-  }
-  .w-\[48\%\] {
-    width: 48%;
-  }
-  .w-\[50\%\] {
-    width: 50%;
   }
   .w-\[5rem\] {
     width: 5rem;
@@ -1031,14 +1031,26 @@
   .w-\[7rem\] {
     width: 7rem;
   }
-  .w-\[33\%\] {
-    width: 33%;
-  }
   .w-\[100vw\] {
     width: 100vw;
   }
   .w-\[13rem\] {
     width: 13rem;
+  }
+  .w-\[33\%\] {
+    width: 33%;
+  }
+  .w-\[400\%\] {
+    width: 400%;
+  }
+  .w-\[45\%\] {
+    width: 45%;
+  }
+  .w-\[48\%\] {
+    width: 48%;
+  }
+  .w-\[50\%\] {
+    width: 50%;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -1055,11 +1067,14 @@
   .w-\[93vw\] {
     width: 93vw;
   }
+  .w-\[95\%\] {
+    width: 95%;
+  }
   .w-\[95vw\] {
     width: 95vw;
   }
-  .w-\[400\%\] {
-    width: 400%;
+  .w-\[100\%\] {
+    width: 100%;
   }
   .w-full {
     width: 100%;
@@ -2774,6 +2789,18 @@
       right: calc(var(--spacing) * 0);
     }
   }
+  .before\:z-\[-1\] {
+    &::before {
+      content: var(--tw-content);
+      z-index: -1;
+    }
+  }
+  .before\:block {
+    &::before {
+      content: var(--tw-content);
+      display: block;
+    }
+  }
   .before\:h-\[95vh\] {
     &::before {
       content: var(--tw-content);
@@ -2781,6 +2808,12 @@
     }
   }
   .before\:w-\[100\%\] {
+    &::before {
+      content: var(--tw-content);
+      width: 100%;
+    }
+  }
+  .before\:w-full {
     &::before {
       content: var(--tw-content);
       width: 100%;
@@ -2798,10 +2831,23 @@
       background-color: var(--color-black);
     }
   }
+  .before\:opacity-100 {
+    &::before {
+      content: var(--tw-content);
+      opacity: 100%;
+    }
+  }
   .before\:content-\[\'\'\] {
     &::before {
       content: var(--tw-content);
       --tw-content: '';
+      content: var(--tw-content);
+    }
+  }
+  .before\:content-\[\'TEST\'\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: 'TEST';
       content: var(--tw-content);
     }
   }

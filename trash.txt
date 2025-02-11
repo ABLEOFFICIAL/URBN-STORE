@@ -70,3 +70,11 @@
                         </div>
                     </div>
                 </div>
+
+                 class="relative h-[100vh] overflow-hidden text-white p-6 before:absolute before:content-[''] before:bg-black before:h-[95vh] before:w-[100%] before:top-0 before:right-0 before:rounded-bl-full
+    
+    after:absolute after:content-[''] after:bg-neutral-400 after:h-[15vh] after:w-[35%] after:bottom-0 after:left-0 after:rounded-tr-full"
+
+     before:absolute before:content-[''] before:bg-black before:h-[95vh] before:w-[100%] before:top-0 before:right-0 before:rounded-bl-full
+    
+    after:absolute after:content-[''] after:bg-neutral-400 after:h-[15vh] after:w-[35%] after:bottom-0 after:left-0 after:rounded-tr-full
