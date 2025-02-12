@@ -11,6 +11,7 @@ let products = document.getElementById('products');
 let productCategory = document.getElementById('product-category');
 
 
+
 // show sidebar
 function showSideBar(){
     sideBar.classList.remove('hidden');
@@ -46,3 +47,5 @@ products.addEventListener('click', () => {
     productCategory.classList.toggle('hidden');
     // productCategory.classList.add('flex');
 })
+
+

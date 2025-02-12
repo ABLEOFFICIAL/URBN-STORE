@@ -6,12 +6,12 @@ let info2 = document.getElementById('info-2');
 // direct to mens product params
 let men = document.getElementById('men');
 let women = document.getElementById('women');
-
 // user account
 let account = document.querySelector('#account');
 // account on nav
 let accountIcon = document.getElementById('account-icon');
 let anchor = accountIcon.querySelector('a');
+
 
 
 

@@ -1,5 +1,10 @@
 // product page
 let productsBox = document.getElementById('products-box');
+// user account
+let account = document.querySelector('#account');
+// account on nav
+let accountIcon = document.getElementById('account-icon');
+let anchor = accountIcon.querySelector('a');
 
 let productList = [];
 // display products dynamically
@@ -29,3 +34,13 @@ function displayProducts(){
                  
 }
 displayProducts();
+
+// home when logged in 
+let getUser = JSON.parse(localStorage.getItem('user'));
+console.log(getUser);
+
+// check if user is logged in
+if (getUser){
+    account.href = '../user-profile/profile.html';
+    anchor.href = '../user-profile/profile.html'
+}
