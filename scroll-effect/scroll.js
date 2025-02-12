@@ -15,6 +15,5 @@ window.addEventListener('scroll', function(){
 // add back btn event
 backBtn.addEventListener('click', () => {
     window.history.back();
-    console.log(hekko);
     
 })

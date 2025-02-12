@@ -9,7 +9,7 @@ let userBlock = document.getElementById('user-block');
 
 // add back btn event
 backBtn.addEventListener('click', () => {
-    window.location.href = '../index.html';
+    window.history.back();
 })
 
 // function to display user details

@@ -1,0 +1,56 @@
+[
+    {
+        "id": "30",
+        "name": "black Nike",
+        "price": "$95",
+        "image": "/images/black nike.jpg"
+    },
+    {
+        "id": "31",
+        "name": "canvas",
+        "price": "$95",
+        "image": "/images/canvas.jpg"
+    },
+    {
+        "id": "32",
+        "name": "green sneaker",
+        "price": "$95",
+        "image": "/images/green sneaker.jpg"
+    },
+    {
+        "id": "33",
+        "name": "red sneaker",
+        "price": "$95",
+        "image": "/images/red sneaker.jpg"
+    },
+    {
+        "id": "34",
+        "name": "yellow sneaker",
+        "price": "$95",
+        "image": "/images/yellow sneaker.jpg"
+    },
+    {
+        "id": "40",
+        "name": "Blue Heels",
+        "price": "$95",
+        "image": "/images/blue heels.jpg"
+    },
+    {
+        "id": "41",
+        "name": "Nike Jordan",
+        "price": "$95",
+        "image": "/images/nike jordan.jpg"
+    },
+    {
+        "id": "42",
+        "name": "Red Heels",
+        "price": "$95",
+        "image": "/images/red heels.jpg"
+    },
+    {
+        "id": "43",
+        "name": "White Heels",
+        "price": "$95",
+        "image": "/images/white heels.jpg"
+    }
+]
