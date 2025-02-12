@@ -6,6 +6,8 @@ let account = document.querySelector('#account');
 // account on nav
 let accountIcon = document.getElementById('account-icon');
 let anchor = accountIcon.querySelector('a');
+// search products
+let searchProduct = document.getElementById('search-product');
 
 
 // display products dynamically
@@ -44,4 +46,46 @@ if (getUser){
     account.href = '../user-profile/profile.html';
     anchor.href = '../user-profile/profile.html'
 }
+
+// search product event
+fetch('../productF.json')
+.then(response => response.json())
+.then(products => {
+    console.log(products);
+    
+    searchProduct.addEventListener('input', () => {
+        let searchValue = searchProduct.value;
+        let searchedInput = searchValue.toLowerCase();
+
+        if(searchedInput === ''){
+            displayProducts();
+        }else{
+            let searchResult = products.filter(product => 
+                product.name.toLowerCase().includes(searchedInput)
+            );
+            displaySearchedInput(searchResult);
+        }
+
+    })
+
+    function displaySearchedInput(items){
+        productsBox.innerHTML = '';
+        items.forEach(item => {
+            let pBox = document.createElement('div');
+            pBox.classList.add('w-[48%]', 'bg-white', 'rounded-2xl', 'h-[50vh]');
+            pBox.innerHTML = `
+                            <img src="${item.image}" alt="" class="rounded-t-2xl w-[90%] m-auto h-[60%] object-cover">
+                <div class="px-4 pt-2 pb-4">
+                    <p>${item.name}</p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span>1 color(s)</span>
+                        <span class="text-end">$${item.price}</span>
+                    </div>
+                    <a href="#" class="bg-black text-white text-center py-2 px-6 rounded-3xl block text-xs font-bold">SHOP NOW</a>
+                </div>
+                `;
+                productsBox.appendChild(pBox);
+        })
+    }
+});
 })
