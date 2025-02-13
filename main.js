@@ -11,6 +11,9 @@ let account = document.querySelector('#account');
 // account on nav
 let accountIcon = document.getElementById('account-icon');
 let anchor = accountIcon.querySelector('a');
+// night mood
+let moodChange = document.getElementById('night-mood');
+let moodText = document.getElementById('mood-text');
 
 
 
@@ -48,3 +51,19 @@ if (getUser){
     account.href = './user-profile/profile.html';
     anchor.href = './user-profile/profile.html'
 }
+
+moodChange.addEventListener('click', () => {
+    nightMood();
+    moodText.textContent = 'LIGHT MOOD'
+})
+
+// light and dark mood function
+function nightMood() {
+    document.body.classList.remove('bg-neutral-200');
+    document.body.classList.add('bg-black', 'text-white');
+};
+
+function lightMood() {
+    document.body.classList.remove('bg-black', 'text-white');
+    document.body.classList.add('bg-black', 'text-white');
+};
