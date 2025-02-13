@@ -16,6 +16,7 @@ function displayProducts(){
       .then(data => {
         data.forEach(product => {
             let productCard = document.createElement('div');
+            productCard.id = 'product-card';
             productCard.classList.add('w-[48%]', 'bg-white', 'rounded-2xl', 'h-[50vh]');
             productCard.innerHTML = `
                 <img src="${product.image}" class="rounded-t-2xl w-[100%] m-auto h-[70%] object-cover">
@@ -29,7 +30,17 @@ function displayProducts(){
                 </div>
             `
             productsBox.appendChild(productCard);
-             
+ 
+        })
+        let cards = productsBox.querySelectorAll('#product-card');
+        // console.log(cards);
+        cards.forEach(card => {
+            card.addEventListener('click', (e) => {
+                let clickedItem = e.target.closest('#product-card');
+                let itemToView = localStorage.setItem('viewItem', json.stringify(clickedItem));
+                window.location.href = '../viewProduct/viewProduct.html';
+                
+            })
         })
     }) 
                  
