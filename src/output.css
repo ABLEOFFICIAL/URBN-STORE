@@ -935,6 +935,9 @@
   .h-\[60vh\] {
     height: 60vh;
   }
+  .h-\[70\%\] {
+    height: 70%;
+  }
   .h-\[80\%\] {
     height: 80%;
   }
@@ -961,6 +964,9 @@
   }
   .w-14 {
     width: calc(var(--spacing) * 14);
+  }
+  .w-\[100\%\] {
+    width: 100%;
   }
   .w-\[100vw\] {
     width: 100vw;
