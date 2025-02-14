@@ -66,24 +66,25 @@
 
     <!-- show clicked item -->
     <section class="p-4">
-        <div class="header py-2">
+        <div class="header p-4 relative">
+            <i id="back-btn" class="fa-solid fa-chevron-left absolute top-[40%] font-bold text-2xl cursor-pointer"></i>
             <h2 class="text-center font-medium text-2xl">PRODUCT DETAIL</h2>
         </div>
-        <div class="product-sctn w-[100%] flex gap-7 flex-wrap items-center">
+        <div id="item-display" class="product-sctn w-[100%] flex gap-7 flex-wrap items-center mt-3">
             <div class="text-center m-auto">
-                <img src="../images/green sneaker.jpg" class="w-full rounded-3xl h-[50vh] object-cover ">
+                <img id="clicked-pro-img" src="" class="w-full rounded-3xl h-[50vh] object-cover ">
             </div>
             <div class="p-2">
-                <h2 class="font-bold text-3xl py-3">Green Sneaker</h2>
-                <span class="block text-neutral-700 font-bold py-2">$50</span>
+                <h2 id="clicked-pro-name" class="font-bold text-3xl py-3"></h2>
+                <span id="clicked-pro-price" class="block text-neutral-700 font-bold py-2"></span>
                 <button class="bg-neutral-400 text-black font-bold rounded-xl py-2 px-4 mr-2">CHECK OUT</button>
                 <button class="bg-black text-white font-bold rounded-xl py-2 px-4">ADD TO CART</button>
-                <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente.</p>
+                <p id="clicked-pro-description" class="my-4 w-[90%]"></p>
             </div>
-        </div>
-        <div id="featured products">
-            <!-- generate dynamically -->
-        </div>
+        </div><br><br><br>
+        <!--<div id="featured-products">
+             generate dynamically
+        </div>-->
     </section>
 
     <script src="viewProduct.js"></script>

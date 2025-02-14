@@ -16,7 +16,8 @@ function displayProducts(){
       .then(response => response.json())
       .then(data => {
         data.forEach(product => {
-            let productCard = document.createElement('div');
+            let productCard = document.createElement('a');
+            productCard.href = '../viewProduct/viewProduct.html?id=' + product.id;
             productCard.classList.add('w-[48%]', 'bg-white', 'rounded-2xl', 'h-[50vh]');
             productCard.innerHTML = `
                 <img src="${product.image}" class="rounded-t-2xl w-[100%] m-auto h-[70%] object-cover">

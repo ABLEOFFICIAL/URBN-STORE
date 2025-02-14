@@ -78,3 +78,15 @@
      before:absolute before:content-[''] before:bg-black before:h-[95vh] before:w-[100%] before:top-0 before:right-0 before:rounded-bl-full
     
     after:absolute after:content-[''] after:bg-neutral-400 after:h-[15vh] after:w-[35%] after:bottom-0 after:left-0 after:rounded-tr-full
+
+    // viewing clicked product
+                <div class="text-center m-auto">
+                <img src="../images/green sneaker.jpg" class="w-full rounded-3xl h-[50vh] object-cover ">
+            </div>
+            <div class="p-2">
+                <h2 class="font-bold text-3xl py-3">Green Sneaker</h2>
+                <span class="block text-neutral-700 font-bold py-2">$50</span>
+                <button class="bg-neutral-400 text-black font-bold rounded-xl py-2 px-4 mr-2">CHECK OUT</button>
+                <button class="bg-black text-white font-bold rounded-xl py-2 px-4">ADD TO CART</button>
+                <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente.</p>
+            </div>

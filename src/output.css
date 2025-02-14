@@ -788,6 +788,9 @@
   .my-\[3rem\] {
     margin-block: 3rem;
   }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
