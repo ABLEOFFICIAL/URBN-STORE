@@ -15,7 +15,8 @@ function displayProducts(){
       .then(response => response.json())
       .then(data => {
         data.forEach(product => {
-            let productCard = document.createElement('div');
+            let productCard = document.createElement('a');
+            productCard.href = '../viewProduct/viewProduct.html?id=' + product.id;
             productCard.id = 'product-card';
             productCard.classList.add('w-[48%]', 'bg-white', 'rounded-2xl', 'h-[50vh]');
             productCard.innerHTML = `
@@ -32,20 +33,21 @@ function displayProducts(){
             productsBox.appendChild(productCard);
  
         })
-        let cards = productsBox.querySelectorAll('#product-card');
-        // console.log(cards);
-        cards.forEach(card => {
-            card.addEventListener('click', (e) => {
-                let clickedItem = e.target.closest('#product-card');
-                let itemToView = localStorage.setItem('viewItem', json.stringify(clickedItem));
-                window.location.href = '../viewProduct/viewProduct.html';
+        // let cards = productsBox.querySelectorAll('#product-card');
+        // // console.log(cards);
+        // cards.forEach(card => {
+        //     card.addEventListener('click', (e) => {
+        //         let clickedItem = e.target.closest('#product-card');
+        //         let itemToView = localStorage.setItem('viewItem', json.stringify(clickedItem));
+        //         window.location.href = '../viewProduct/viewProduct.html';
                 
-            })
-        })
+        //     })
+        // })
     }) 
                  
 }
 displayProducts();
+
 
 // home when logged in 
 let getUser = JSON.parse(localStorage.getItem('user'));
