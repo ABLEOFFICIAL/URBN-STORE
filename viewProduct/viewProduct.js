@@ -8,6 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let clickedProDescription = document.getElementById('clicked-pro-description');
     // go back
     let backBtn = document.getElementById('back-btn');
+    // increase number of products
+    let minus = document.getElementById('minus');
+    let numOfCount = document.getElementById('numOfCount');
+    let plus = document.getElementById('plus');
+    // add to cart btn
+    let addToCart = document.getElementById('add-to-cart');
+
 
     const productURL = new URLSearchParams(window.location.search);
     // console.log(productURL.get('id'));
@@ -34,6 +41,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     backBtn.addEventListener('click', () => {
         window.history.back();
+    });
+
+    plus.addEventListener('click', () => {
+        let strNum = +numOfCount.textContent;
+        strNum++;
+        numOfCount.innerText = strNum;  
+        localStorage.setItem('numOfCount', strNum);   
     })
+    minus.addEventListener('click', () => {
+        let strNum = +numOfCount.textContent;
+        if(numOfCount.textContent == '0'){
+            numOfCount.textContent = numOfCount.textContent;
+        }else{
+            strNum--;
+            numOfCount.innerText = strNum; 
+
+        }
+    })
+
+    // save number of items
+    // console.log(savedNum)
+
+    // add to cart event
+    // addToCart.addEventListener('click', () => {})
     
 })
