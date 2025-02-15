@@ -1,37 +1,30 @@
 [
     {
-        "id": "35",
-        "name": "Chanel",
+        "id": "6",
+        "name": "black polo",
         "price": "$95",
-        "image": "/images/bag-1.jpg",
+        "image": "/images/black polo.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
-        "id": "36",
-        "name": "Louis Vuitton",
+        "id": "30",
+        "name": "black Nike",
         "price": "$95",
-        "image": "/images/bag-2.jpg",
+        "image": "/images/black nike.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
-        "id": "37",
-        "name": "Hermès",
+        "id": "11",
+        "name": "Baggy Jeans",
         "price": "$95",
-        "image": "/images/bag-3.jpg",
+        "image": "/images/jean-1.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
-        "id": "38",
-        "name": "Prada",
+        "id": "21",
+        "name": "Vintage Blue",
         "price": "$95",
-        "image": "/images/bag-4.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
-    },
-    {
-        "id": "39",
-        "name": "Fendi",
-        "price": "$95",
-        "image": "/images/bag-5.jpg",
+        "image": "/images/vin-1.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     }
 ]

@@ -90,3 +90,49 @@
                 <button class="bg-black text-white font-bold rounded-xl py-2 px-4">ADD TO CART</button>
                 <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente.</p>
             </div>
+
+//trending products
+            <div class="w-[48%] bg-white rounded-2xl h-[50vh]">
+                <img src="/images/black polo.jpg" alt="" class="rounded-t-2xl w-[100%] m-auto h-[70%] object-cover">
+                <div class="px-4 pt-2 pb-4">
+                    <h4 class="text-slate-800">New</h4>
+                    <p>Black Polo</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span>1 color(s)</span>
+                        <span class="text-end">$30</span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[48%] bg-white rounded-2xl h-[50vh]">
+                <img src="/images/black nike.jpg" alt="" class="rounded-t-2xl w-[100%] m-auto h-[70%] object-cover">
+                <div class="px-4 pt-2 pb-4">
+                    <h4 class="text-slate-800">New</h4>
+                    <p>Black Polo</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span>1 color(s)</span>
+                        <span class="text-end">$30</span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[48%] bg-white rounded-2xl h-[50vh]">
+                <img src="/images/jean-1.jpg" alt="" class="rounded-t-2xl w-[100%] m-auto h-[70%] object-cover">
+                <div class="px-4 pt-2 pb-4">
+                    <h4 class="text-slate-800">New</h4>
+                    <p>Black Polo</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span>1 color(s)</span>
+                        <span class="text-end">$30</span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[48%] bg-white rounded-2xl h-[50vh]">
+                <img src="/images/vin-1.jpg" alt="" class="rounded-t-2xl w-[100%] m-auto h-[70%] object-cover">
+                <div class="px-4 pt-2 pb-4">
+                    <h4 class="text-slate-800">New</h4>
+                    <p>Black Polo</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span>1 color(s)</span>
+                        <span class="text-end">$30</span>
+                    </div>
+                </div>
+            </div>

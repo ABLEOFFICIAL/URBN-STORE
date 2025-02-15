@@ -5,6 +5,8 @@ let account = document.querySelector('#account');
 // account on nav
 let accountIcon = document.getElementById('account-icon');
 let anchor = accountIcon.querySelector('a');
+// search products
+let searchProduct = document.getElementById('search-product');
 
 let productList = [];
 // display products dynamically

@@ -1,6 +1,35 @@
-// newsleteter slide
+document.addEventListener('DOMContentLoaded', () => {
+    // newsleteter slide
 let info1 = document.getElementById('info-1');
 let info2 = document.getElementById('info-2');
+// trnding products
+let trending = document.getElementById('trending');
+
+function displaytrendingProduct() {
+    fetch('products-trend.json')
+    .then(Response => Response.json())
+    .then(products => {
+        products.forEach(product => {     
+            let trendCard = document.createElement('a');
+            trendCard.href = './viewProduct/viewProduct.html?id=' + product.id;
+            trendCard.classList.add('w-[48%]', 'bg-white', 'rounded-2xl', 'h-[50vh]');
+            trendCard.innerHTML = `
+                            <img src="${product.image}" alt="" class="rounded-t-2xl w-[100%] m-auto h-[70%] object-cover">
+                <div class="px-4 pt-2 pb-4">
+                    <h4 class="text-slate-800">New</h4>
+                    <p>${product.name}</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span>1 color(s)</span>
+                        <span class="text-end">${product.price}</span>
+                    </div>
+                </div>`;
+            trending.appendChild(trendCard);
+            console.log(trendCard.href);
+            
+        })
+    })
+}
+displaytrendingProduct();
 
 
 // direct to mens product params
@@ -67,3 +96,4 @@ function lightMood() {
     document.body.classList.remove('bg-black', 'text-white');
     document.body.classList.add('bg-black', 'text-white');
 };
+})
