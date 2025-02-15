@@ -28,7 +28,7 @@ fetch('../productAll.json')
             let productBox = document.createElement('div');
             productBox.classList.add('w-[48%]', 'bg-white', 'rounded-2xl', 'h-[50vh]');
             productBox.innerHTML = `
-                            <img src="${item.image}" alt="" class="rounded-t-2xl w-[90%] m-auto h-[60%] object-cover">
+                            <img src="${item.image}" alt="" class="rounded-t-2xl w-[100%] m-auto h-[70%] object-cover">
                 <div class="px-4 pt-2 pb-4">
                     <p>${item.name}</p>
                     <div class="flex justify-between items-center mb-4">
