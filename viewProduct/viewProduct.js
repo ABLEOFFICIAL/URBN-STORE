@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let plus = document.getElementById('plus');
     // add to cart btn
     let addToCart = document.getElementById('add-to-cart');
+    // cart product
+    let showCartProduct = document.getElementById('show-cart-product');
+    
+
 
 
     const productURL = new URLSearchParams(window.location.search);
@@ -64,6 +68,40 @@ document.addEventListener('DOMContentLoaded', () => {
     // console.log(savedNum)
 
     // add to cart event
-    // addToCart.addEventListener('click', () => {})
+    addToCart.addEventListener('click', () => {
+        fetch('../productAll.json')
+        .then(Response => Response.json())
+        .then(product => {
+            product.find(p => {
+                if (p.id == productID) {
+                    console.log(p);
+                    
+                    function addProduct(){
+                        showCartProduct.textContent = '';
+                        showCartProduct.classList.remove('flex', 'flex-col', 'h-[60vh]', 'justify-center', 'items-center');
+                        showCartProduct.innerHTML = `
+                                                <div class="w-[100vw]">
+                            <div class="flex justify-between items-center w-[95%] p-6 bg-white rounded-2xl">
+                                <div class="w-[26%]">
+                                    <img src="${p.image}" class="w-20 h-20 rounded-lg">
+                                </div>
+                                <div class=" w-[52%]">
+                                    <p class="font-bold text-xl">${p.name}</p>
+                                    <p>${p.price} * 2 <span class="font-bold">$200</span></p>
+                                </div>
+                                <div class="w-[15%] text-center">
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="bg-black text-white font-bold text-lg block w-full py-3 border-0 rounded-2xl my-5">CHECKOUT</button>
+                        </div>`;
+                    }
+                    addProduct();
+                }
+            })
+        })
+    })
     
 })

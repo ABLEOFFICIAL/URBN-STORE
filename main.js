@@ -6,7 +6,7 @@ let info2 = document.getElementById('info-2');
 let trending = document.getElementById('trending');
 
 function displaytrendingProduct() {
-    fetch('products-trend.json')
+    fetch('./products-trend.json')
     .then(Response => Response.json())
     .then(products => {
         products.forEach(product => {     
@@ -24,7 +24,7 @@ function displaytrendingProduct() {
                     </div>
                 </div>`;
             trending.appendChild(trendCard);
-            console.log(trendCard.href);
+            // console.log(trendCard.href);
             
         })
     })
