@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // find and display clicked product
     function findClickedProduct() {
         fetch('../productAll.json')
-        .then(Response => Response.json())
+        .then(response => response.json())
         .then(products => {
             products.find(product => {
                 if (product.id == productID) {
-                    console.log(product);
+                    // console.log(product);
                     
                     clickedProImg.src = product.image;
                     clickedProName.innerText = product.name;
@@ -61,9 +61,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }else{
             strNum--;
             numOfCount.innerText = strNum; 
-
+            localStorage.setItem('numOfCount', strNum); 
         }
     })
+
+    // get count from local storage and display it
+    let count = localStorage.getItem('numOfCount');
+    if (count == null) {
+        numOfCount.textContent = 0;
+        } else {
+            numOfCount.textContent = count;
+        }
 
     // save number of items
     // console.log(savedNum)
@@ -75,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(product => {
             product.find(p => {
                 if (p.id == productID) {
-                    console.log(p.price);
+                    // console.log(p.price);
                     
                     function addProduct(){
                         // showCartProduct.textContent = '';
@@ -100,6 +108,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div>
                             <button class="bg-black text-white font-bold text-lg block w-full py-3 border-0 rounded-2xl my-5">CHECKOUT</button>
                         </div>`;
+
+                        // save to local storage
+                        localStorage.setItem('cartItem', JSON.stringify(p));
+                        let savedItem = localStorage.getItem('cartItem');
+                        console.log(savedItem);
                     }
                     addProduct();
                 }

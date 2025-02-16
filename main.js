@@ -97,3 +97,7 @@ function lightMood() {
     document.body.classList.add('bg-black', 'text-white');
 };
 })
+
+// saved cart product
+let savedItem = localStorage.getItem('cartItem');
+console.log(savedItem);
