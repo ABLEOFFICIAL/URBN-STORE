@@ -2,63 +2,63 @@
     {
         "id": "35",
         "name": "Chanel",
-        "price": "$95",
+        "price": "95",
         "image": "/images/bag-1.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "36",
         "name": "Louis Vuitton",
-        "price": "$95",
+        "price": "95",
         "image": "/images/bag-2.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "37",
         "name": "Hermès",
-        "price": "$95",
+        "price": "95",
         "image": "/images/bag-3.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "38",
         "name": "Prada",
-        "price": "$95",
+        "price": "95",
         "image": "/images/bag-4.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "39",
         "name": "Fendi",
-        "price": "$95",
+        "price": "95",
         "image": "/images/bag-5.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "40",
         "name": "Blue Heels",
-        "price": "$95",
+        "price": "95",
         "image": "/images/blue heels.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "41",
         "name": "Nike Jordan",
-        "price": "$95",
+        "price": "95",
         "image": "/images/nike jordan.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "42",
         "name": "Red Heels",
-        "price": "$95",
+        "price": "95",
         "image": "/images/red heels.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "43",
         "name": "White Heels",
-        "price": "$95",
+        "price": "95",
         "image": "/images/white heels.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     }

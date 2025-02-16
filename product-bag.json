@@ -2,35 +2,35 @@
     {
         "id": "35",
         "name": "Chanel",
-        "price": "$95",
+        "price": "95",
         "image": "/images/bag-1.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "36",
         "name": "Louis Vuitton",
-        "price": "$95",
+        "price": "95",
         "image": "/images/bag-2.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "37",
         "name": "Hermès",
-        "price": "$95",
+        "price": "95",
         "image": "/images/bag-3.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "38",
         "name": "Prada",
-        "price": "$95",
+        "price": "95",
         "image": "/images/bag-4.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "39",
         "name": "Fendi",
-        "price": "$95",
+        "price": "95",
         "image": "/images/bag-5.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     }

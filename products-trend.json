@@ -2,28 +2,28 @@
     {
         "id": "6",
         "name": "black polo",
-        "price": "$95",
+        "price": "95",
         "image": "/images/black polo.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "30",
         "name": "black Nike",
-        "price": "$95",
+        "price": "95",
         "image": "/images/black nike.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "11",
         "name": "Baggy Jeans",
-        "price": "$95",
+        "price": "95",
         "image": "/images/jean-1.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "21",
         "name": "Vintage Blue",
-        "price": "$95",
+        "price": "95",
         "image": "/images/vin-1.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     }

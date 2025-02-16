@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let addToCart = document.getElementById('add-to-cart');
     // cart product
     let showCartProduct = document.getElementById('show-cart-product');
+    let emptyCart = document.getElementById('empty-cart');
     
 
 
@@ -74,11 +75,13 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(product => {
             product.find(p => {
                 if (p.id == productID) {
-                    console.log(p);
+                    console.log(p.price);
                     
                     function addProduct(){
-                        showCartProduct.textContent = '';
+                        // showCartProduct.textContent = '';
+                        emptyCart.classList.add('hidden');
                         showCartProduct.classList.remove('flex', 'flex-col', 'h-[60vh]', 'justify-center', 'items-center');
+                        showCartProduct.classList.add('p-3')
                         showCartProduct.innerHTML = `
                                                 <div class="w-[100vw]">
                             <div class="flex justify-between items-center w-[95%] p-6 bg-white rounded-2xl">
@@ -87,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                                 <div class=" w-[52%]">
                                     <p class="font-bold text-xl">${p.name}</p>
-                                    <p>${p.price} * 2 <span class="font-bold">$200</span></p>
+                                    <p>${p.price} * ${numOfCount.textContent} <span class="font-bold">$${(Number(p.price) * Number(numOfCount.textContent)).toString()}</span></p>
                                 </div>
                                 <div class="w-[15%] text-center">
                                     <i class="fa-solid fa-trash"></i>

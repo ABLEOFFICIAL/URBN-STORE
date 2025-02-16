@@ -25,7 +25,8 @@ fetch('../productAll.json')
     function displaySearchedInput(items){
         filteredProducts.innerHTML = '';
         items.forEach(item => {
-            let productBox = document.createElement('div');
+            let productBox = document.createElement('a');
+            productBox.href = '../viewProduct/viewProduct.html?id=' + item.id;
             productBox.classList.add('w-[48%]', 'bg-white', 'rounded-2xl', 'h-[50vh]');
             productBox.innerHTML = `
                             <img src="${item.image}" alt="" class="rounded-t-2xl w-[100%] m-auto h-[70%] object-cover">

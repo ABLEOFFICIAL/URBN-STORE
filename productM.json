@@ -2,203 +2,203 @@
     {
         "id": "6",
         "name": "black polo",
-        "price": "$95",
+        "price": "95",
         "image": "/images/black polo.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "7",
         "name": "blue polo",
-        "price": "$95",
+        "price": "95",
         "image": "/images/blue polo.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "8",
         "name": "brown polo",
-        "price": "$95",
+        "price": "95",
         "image": "/images/brown polo.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "9",
         "name": "gray tshirt",
-        "price": "$95",
+        "price": "95",
         "image": "/images/gray tshirt.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "10",
         "name": "green polo",
-        "price": "$95",
+        "price": "95",
         "image": "/images/green polo.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "11",
         "name": "Baggy Jeans",
-        "price": "$95",
+        "price": "95",
         "image": "/images/jean-1.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "12",
         "name": "Boyfriend Jeans",
-        "price": "$95",
+        "price": "95",
         "image": "/images/jean-2.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "13",
         "name": "Cargo Jeans",
-        "price": "$95",
+        "price": "95",
         "image": "/images/jean-3.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "14",
         "name": "Dad Jeans",
-        "price": "$95",
+        "price": "95",
         "image": "/images/jean-4.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "15",
         "name": "red polo",
-        "price": "$95",
+        "price": "95",
         "image": "/images/red polo.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "16",
         "name": "Crew Neck Sweater",
-        "price": "$95",
+        "price": "95",
         "image": "/images/sweater--2.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "17",
         "name": "Chunky Knit Sweater",
-        "price": "$95",
+        "price": "95",
         "image": "/images/sweater--3.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "18",
         "name": "Pullover Sweater",
-        "price": "$95",
+        "price": "95",
         "image": "/images/sweater-1.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "19",
         "name": "V-Neck Sweater",
-        "price": "$95",
+        "price": "95",
         "image": "/images/sweater-4.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "20",
         "name": "Cardigan",
-        "price": "$95",
+        "price": "95",
         "image": "/images/sweater-5.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "21",
         "name": "Vintage Blue",
-        "price": "$95",
+        "price": "95",
         "image": "/images/vin-1.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "22",
         "name": "Vintage Brown",
-        "price": "$95",
+        "price": "95",
         "image": "/images/vin-2.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "23",
         "name": "Vintage classic",
-        "price": "$95",
+        "price": "95",
         "image": "/images/vin-3.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "24",
         "name": "Vintage strip",
-        "price": "$95",
+        "price": "95",
         "image": "/images/vin-4.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "25",
         "name": "vintage Floral",
-        "price": "$95",
+        "price": "95",
         "image": "/images/vin-5.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "26",
         "name": "Vintage SA",
-        "price": "$95",
+        "price": "95",
         "image": "/images/vin-6.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "27",
         "name": "white polo",
-        "price": "$95",
+        "price": "95",
         "image": "/images/white polo.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "28",
         "name": "white tshirt",
-        "price": "$95",
+        "price": "95",
         "image": "/images/white tshirt.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "29",
         "name": "yellow tshirt",
-        "price": "$95",
+        "price": "95",
         "image": "/images/yellow tshirt.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "30",
         "name": "black Nike",
-        "price": "$95",
+        "price": "95",
         "image": "/images/black nike.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "31",
         "name": "canvas",
-        "price": "$95",
+        "price": "95",
         "image": "/images/canvas.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "32",
         "name": "green sneaker",
-        "price": "$95",
+        "price": "95",
         "image": "/images/green sneaker.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "33",
         "name": "red sneaker",
-        "price": "$95",
+        "price": "95",
         "image": "/images/red sneaker.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "34",
         "name": "yellow sneaker",
-        "price": "$95",
+        "price": "95",
         "image": "/images/yellow sneaker.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     }
