@@ -4,6 +4,11 @@ let info1 = document.getElementById('info-1');
 let info2 = document.getElementById('info-2');
 // trnding products
 let trending = document.getElementById('trending');
+// cart product
+let showCartProduct = document.getElementById('show-cart-product');
+let emptyCart = document.getElementById('empty-cart');
+
+
 
 function displaytrendingProduct() {
     fetch('./products-trend.json')
@@ -43,8 +48,6 @@ let anchor = accountIcon.querySelector('a');
 // night mood
 let moodChange = document.getElementById('night-mood');
 let moodText = document.getElementById('mood-text');
-
-
 
 
 
@@ -97,7 +100,3 @@ function lightMood() {
     document.body.classList.add('bg-black', 'text-white');
 };
 })
-
-// saved cart product
-let savedItem = localStorage.getItem('cartItem');
-console.log(savedItem);
