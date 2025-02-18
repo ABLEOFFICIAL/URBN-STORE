@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let clickedProDescription = document.getElementById('clicked-pro-description');
     // go back
     let backBtn = document.getElementById('back-btn');
+    // let productListArray;
 
 
     // cart product
@@ -15,7 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
     let emptyCart = document.getElementById('empty-cart');
     
 
-
+    fetch('../productListArray.json')
+    .then(response => response.json())
+    .then(data => {
+        data = JSON.parse(localStorage.getItem('productListArray'));
+        productListArray = data;
+        console.log(productListArray);
+        let savedItem = JSON.parse(localStorage.getItem('productListArray'));
+        console.log(savedItem);
+        
+    }
+    )
 
     const productURL = new URLSearchParams(window.location.search);
     // console.log(productURL.get('id'));
@@ -55,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // increase number of products
                 let minus = document.getElementById('minus');
                 let numOfCount = document.getElementById('numOfCount');
+                localStorage.setItem('numOfCount', JSON.stringify(numOfCount)); 
                 let plus = document.getElementById('plus');
 
                 // add to cart btn
@@ -64,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     let strNum = +numOfCount.textContent;
                     strNum++;
                     numOfCount.innerText = strNum;  
-                    localStorage.setItem('numOfCount', strNum);   
+                    // localStorage.setItem('numOfCount', strNum);   
                 })
                 minus.addEventListener('click', () => {
                     let strNum = +numOfCount.textContent;
@@ -73,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }else{
                         strNum--;
                         numOfCount.innerText = strNum; 
-                        localStorage.setItem('numOfCount', strNum); 
+                        // localStorage.setItem('numOfCount', strNum); 
                     }
                 })
                     // get count from local storage and display it
@@ -84,6 +96,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         numOfCount.textContent = count;
                     }
 
+                
+                // console.log();
+                
+
                 addToCart.addEventListener('click', () => {
                     fetch('../productAll.json')
                     .then(response => response.json())
@@ -91,11 +107,16 @@ document.addEventListener('DOMContentLoaded', () => {
                         product.find(p => {
                             if (p.id == productID) {
                                 // console.log(p.price);
+                                productListArray.push(p);
+                                console.log(productListArray);
+                                
+                                 // save to local storage
+                                localStorage.setItem('productListArray', JSON.stringify(productListArray));
 
-                                // save to local storage
-                                localStorage.setItem('cartItem', JSON.stringify(p));
-                                let savedItem = JSON.parse(localStorage.getItem('cartItem'));
-                                console.log(savedItem);
+                               
+                                // localStorage.setItem('cartItem', JSON.stringify(p));
+                                
+                                // console.log(savedItem);
                                 
                                 // function addProduct(){
                                 //     // showCartProduct.textContent = '';

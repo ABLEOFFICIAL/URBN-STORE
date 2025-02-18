@@ -7,6 +7,10 @@ let accountIcon = document.getElementById('account-icon');
 let anchor = accountIcon.querySelector('a');
 // search products
 let searchProduct = document.getElementById('search-product');
+// get saved cart
+let savedItem = JSON.parse(localStorage.getItem('productListArray'));
+console.log(savedItem);
+
 
 let productList = [];
 // display products dynamically
