@@ -11,13 +11,18 @@ let showCartProduct = document.getElementById('show-cart-product');
 let emptyCart = document.getElementById('empty-cart');
 let count = localStorage.getItem('numOfCount');
 
-// button
-let checkOut = document.getElementById('check-out');
+
 
 if(savedItem) {
+    // button
+    let checkOut = document.getElementById('check-out');
+    // console.log(checkOut);
+    
     savedItem.forEach(item => {
        // console.log(savedItem.name);
     function addProduct(){
+
+        
 
         // showCartProduct.textContent = '';
         emptyCart.classList.add('hidden');
@@ -25,7 +30,7 @@ if(savedItem) {
         showCartProduct.classList.add('p-3')
         showCartProduct.innerHTML += `
             <div class="w-[100vw]">
-                <div class="flex justify-between items-center w-[95%] p-6 bg-white rounded-2xl">
+                <div id="del-parent" class="flex mb-2 justify-between items-center w-[95%] p-6 bg-white rounded-2xl">
                     <div class="w-[26%]">
                         <img src="${item.image}" class="w-20 h-20 rounded-lg">
                     </div>
@@ -34,11 +39,16 @@ if(savedItem) {
                         <p>${item.price} * ${count} <span class="font-bold">$${(Number(item.price) * Number(count)).toString()}</span></p>
                     </div>
                     <div class="w-[15%] text-center">
-                        <i class="fa-solid fa-trash"></i>
+                        <i id="del-product" class="fa-solid fa-trash"></i>
                     </div>
                 </div>
             </div>`;
             checkOut.classList.remove('hidden');
+
+            // delete added product
+            let delProduct = showCartProduct.querySelector('del-parent');
+            console.log(delProduct);
+            
         // // save to local storage
         // localStorage.setItem('cartItem', JSON.stringify(p));
         // let savedItem = localStorage.getItem('cartItem');
