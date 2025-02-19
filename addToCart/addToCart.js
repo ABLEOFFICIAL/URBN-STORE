@@ -39,15 +39,24 @@ if(savedItem) {
                         <p>${item.price} * ${count} <span class="font-bold">$${(Number(item.price) * Number(count)).toString()}</span></p>
                     </div>
                     <div class="w-[15%] text-center">
-                        <i id="del-product" class="fa-solid fa-trash"></i>
+                        <i id="del-product" data-id="${item.id}" class="fa-solid fa-trash"></i>
                     </div>
                 </div>
             </div>`;
             checkOut.classList.remove('hidden');
 
             // delete added product
-            let delProduct = showCartProduct.querySelector('del-parent');
-            console.log(delProduct);
+            let parentP = document.querySelectorAll('#del-parent');
+            let delProduct = document.querySelectorAll('#del-product');
+            
+            
+            delProduct.forEach(del => {
+                del.addEventListener('click', function(e) {
+                    e.target.parentElement.parentElement.remove();
+                    savedItem.pop()
+                })
+            })
+            // console.log(delProduct);
             
         // // save to local storage
         // localStorage.setItem('cartItem', JSON.stringify(p));

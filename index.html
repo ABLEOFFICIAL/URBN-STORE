@@ -16,7 +16,7 @@
     <!-- news slide end-->
 
     <!-- nav start -->
-     <div>
+     <div class="md:hidden block">
         <nav class="list-none flex justify-between w-[90vw] m-auto bg-slate-50 rounded-4xl p-3 items-center fixed left-5 bottom-5 z-20">
             <div  id="side-bar-btn" class="flex w-[33%] justify-between items-center bg-black text-slate-50 rounded-4xl py-2 px-4">
                 <li><i class="cursor-pointer fa-solid fa-bars"></i></li>
@@ -29,6 +29,26 @@
         </nav>
      </div>
     <!-- nav end -->
+
+    <!-- nav for desktop -->
+    <div class="w-full">
+        <nav class="list-none bg-red-400 flex justify-between m-auto w-[80%] items-center fixed top-9 left-0 right-0 z-20">
+            <div class="w-[20%]">
+                <img src="/images/logo-black-removebg-preview.png" alt="">
+            </div>
+            <div class="w-[40%] flex justify-between items-center">
+                <li><a href="./index.html">HOME</a></li>
+                <li id="account-icon"><a href="#">PRODUCTS</a></i></li>
+                <li id="cart-icon" class="cursor-pointer">ABOUT</li>
+                <li class="cursor-pointer">CONTACT</li>
+            </div>
+            <div class="w-[5%] flex justify-between items-center">
+                <li id="account-icon"><a href="./login/login.html"><i class="font-bold cursor-pointer fa-regular fa-user"></i></a></i></li>
+                <li id="cart-icon" class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"/></svg> </li>
+            </div>
+        </nav>
+     </div>
+    <!-- nav for desktop -->
 
     <!-- sidebar start -->
      <aside id="side-bar" class=" h-[100vh] w-[80vw] fixed top-0 left-0 z-20 bg-white hidden">
@@ -75,7 +95,7 @@
     <!-- cart section end -->
 
     <!-- hero start-->
-     <section id="hero">
+     <section id="hero" class="p-4 mt-80">
         <div>
             <div id="first-slide" class="bg-[url('/images/hero-banner.jpg')] h-[80vh] bg-cover bg-no-repeat text-slate-50 w-[93vw] rounded-b-3xl m-auto relative">
                 <div class=" h-[12vh] justify-start absolute bottom-[25%] w-[80%] p-3.5">
