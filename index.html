@@ -31,20 +31,22 @@
     <!-- nav end -->
 
     <!-- nav for desktop -->
-    <div class="w-full">
-        <nav class="list-none bg-red-400 flex justify-between m-auto w-[80%] items-center fixed top-9 left-0 right-0 z-20">
-            <div class="w-[20%]">
-                <img src="/images/logo-black-removebg-preview.png" alt="">
-            </div>
-            <div class="w-[40%] flex justify-between items-center">
-                <li><a href="./index.html">HOME</a></li>
-                <li id="account-icon"><a href="#">PRODUCTS</a></i></li>
-                <li id="cart-icon" class="cursor-pointer">ABOUT</li>
-                <li class="cursor-pointer">CONTACT</li>
-            </div>
-            <div class="w-[5%] flex justify-between items-center">
-                <li id="account-icon"><a href="./login/login.html"><i class="font-bold cursor-pointer fa-regular fa-user"></i></a></i></li>
-                <li id="cart-icon" class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"/></svg> </li>
+    <div class="w-full hidden md:block">
+        <nav class="list-none bg-slate-50   w-[100%]  z-20">
+            <div class="w-[80vw] flex justify-between items-center m-auto">
+                <div class="w-[20%]">
+                    <img src="/images/logo-black-removebg-preview.png" alt="">
+                </div>
+                <div class="lg:w-[40%] w-[60%] flex justify-between items-center font-bold">
+                    <li class="border-b-2 border-black leading-20"><a href="./index.html">HOME</a></li>
+                    <li id="account-icon"><a href="#">PRODUCTS</a></i></li>
+                    <li id="cart-icon" class="cursor-pointer">ABOUT</li>
+                    <li class="cursor-pointer">CONTACT</li>
+                </div>
+                <div class="lg:w-[5%] w-[9%] flex justify-between items-center">
+                    <li id="account-icon"><a href="./login/login.html"><i class="font-bold cursor-pointer fa-regular fa-user"></i></a></i></li>
+                    <li id="cart-icon" class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"/></svg> </li>
+                </div>
             </div>
         </nav>
      </div>
@@ -95,15 +97,15 @@
     <!-- cart section end -->
 
     <!-- hero start-->
-     <section id="hero" class="p-4 mt-80">
+     <section id="hero" class="">
         <div>
-            <div id="first-slide" class="bg-[url('/images/hero-banner.jpg')] h-[80vh] bg-cover bg-no-repeat text-slate-50 w-[93vw] rounded-b-3xl m-auto relative">
-                <div class=" h-[12vh] justify-start absolute bottom-[25%] w-[80%] p-3.5">
-                    <h1 class="font-bold text-[30px] leading-tight">THE HOUSE'S ESSENTIALS</h1>
-                    <p class="mb-4">Discover URBN iconic pieces for you</p>
-                    <a href="./discover/discover.html" class="py-3 font-bold text-center text-black cursor-pointer bg-slate-50 rounded-4xl px-7">Discover</a>
+            <div id="first-slide" class="bg-[url('/images/hero-banner.jpg')] h-[80vh] bg-cover bg-no-repeat text-slate-50 w-[93vw] md:w-[80vw]  rounded-b-3xl md:rounded-3xl sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px]  m-auto relative">
+                <div class=" h-[12vh] justify-start absolute bottom-[25%] w-[80%] p-3.5 md:p-10">
+                    <h1 class="font-bold text-[30px] md:text-[40px] leading-tight">THE HOUSE'S ESSENTIALS</h1>
+                    <p class="mb-4 md:text-[20px]">Discover URBN iconic pieces for you</p>
+                    <a href="./discover/discover.html" class="py-3 font-bold text-center text-black cursor-pointer bg-slate-50 rounded-4xl px-7 md:text-[20px]">Discover</a>
                 </div>
-                <div class="absolute top-[4%] left-3">
+                <div class="md:hidden absolute top-[4%] left-3">
                     <img src="/images/logo-removebg-preview (2).png" alt="" class="">
                 </div>
             </div>
@@ -113,7 +115,7 @@
     <!-- hero end-->
 
     <!-- trending products start-->
-     <section class="my-[3rem] p-5 w-[100vw] m-auto">
+     <section class="my-[3rem] p-5 w-[100vw] md:w-[80vw]  m-auto">
         <div class="font-bold ">
             <h2 class="mb-4 text-3xl text-start">Trending</h2>
             <a href="#" id="men-trend" class="border-b-2 border-black">MEN</a>

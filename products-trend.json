@@ -26,5 +26,19 @@
         "price": "95",
         "image": "/images/vin-1.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+    },
+    {
+        "id": "40",
+        "name": "Blue Heels",
+        "price": "95",
+        "image": "/images/blue heels.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+    },
+    {
+        "id": "41",
+        "name": "Nike Jordan",
+        "price": "95",
+        "image": "/images/nike jordan.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     }
 ]

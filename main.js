@@ -17,17 +17,17 @@ function displaytrendingProduct() {
         products.forEach(product => {     
             let trendCard = document.createElement('a');
             trendCard.href = './viewProduct/viewProduct.html?id=' + product.id;
-            trendCard.classList.add('w-[48%]', 'bg-white', 'rounded-2xl', 'h-[50vh]');
+            trendCard.classList.add('w-[48%]','sm:w-[30%]', 'bg-white', 'rounded-2xl', 'h-[50vh]', 'mb-2');
             trendCard.innerHTML = `
                             <img src="${product.image}" alt="" class="rounded-t-2xl w-[100%] m-auto h-[70%] object-cover">
-                <div class="px-4 pt-2 pb-4">
-                    <h4 class="text-slate-800">New</h4>
-                    <p>${product.name}</p>
-                    <div class="flex items-center justify-between mb-4">
-                        <span>1 color(s)</span>
-                        <span class="text-end">${product.price}</span>
-                    </div>
-                </div>`;
+                                <div class="px-4 pt-2 pb-4">
+                                    <h4 class="text-slate-800">New</h4>
+                                    <p>${product.name}</p>
+                                    <div class="flex items-center justify-between mb-4">
+                                        <span>1 color(s)</span>
+                                        <span class="text-end">${product.price}</span>
+                                    </div>
+                                </div>`;
             trending.appendChild(trendCard);
             // console.log(trendCard.href);
             
