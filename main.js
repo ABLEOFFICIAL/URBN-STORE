@@ -17,7 +17,7 @@ function displaytrendingProduct() {
         products.forEach(product => {     
             let trendCard = document.createElement('a');
             trendCard.href = './viewProduct/viewProduct.html?id=' + product.id;
-            trendCard.classList.add('w-[48%]','sm:w-[30%]', 'bg-white', 'rounded-2xl', 'h-[50vh]', 'mb-2');
+            trendCard.classList.add('w-[48%]','sm:w-[30%]', 'bg-white', 'rounded-2xl', 'h-[50vh]', 'mb-2', 'md:h-[60vh]');
             trendCard.innerHTML = `
                             <img src="${product.image}" alt="" class="rounded-t-2xl w-[100%] m-auto h-[70%] object-cover">
                                 <div class="px-4 pt-2 pb-4">
