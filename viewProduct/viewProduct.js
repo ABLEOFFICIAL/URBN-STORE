@@ -55,9 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h2 id="clicked-pro-name" class="font-bold text-3xl py-3">${product.name}</h2>
                         <span id="clicked-pro-price" class="block text-neutral-700 font-bold py-2">${product.price}</span>
                         <div class="mr-4 inline-block">
-                            <button id="minus" class="bg-neutral-400 text-black font-bold py-2 px-4 rounded-l-lg">-</button>
-                            <button id="numOfCount" class="bg-neutral-400 text-black font-bold py-2 px-7">0</button>
-                            <button id="plus" class="bg-neutral-400 text-black font-bold py-2 px-4 rounded-r-lg">+</button>
+                            <button id="minus" class="bg-neutral-400 text-black font-bold py-2 px-3 rounded-l-lg">-</button>
+                            <button id="numOfCount" class="bg-neutral-400 text-black font-bold py-2 px-5">0</button>
+                            <button id="plus" class="bg-neutral-400 text-black font-bold py-2 px-3 rounded-r-lg">+</button>
                         </div>
                         <button id="add-to-cart" class="bg-black text-white font-bold rounded-xl py-2.5 px-4">ADD TO CART</button>
                         <p id="clicked-pro-description" class="my-4 w-[90%]">${product.description}</p>
@@ -66,7 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 // increase number of products
                 let minus = document.getElementById('minus');
                 let numOfCount = document.getElementById('numOfCount');
-                localStorage.setItem('numOfCount', JSON.stringify(numOfCount)); 
+
+                
+                
+                localStorage.setItem('numOfCount', JSON.stringify(numOfCount.textContent)); 
+                localStorage.getItem(numOfCount.textContent);
                 let plus = document.getElementById('plus');
 
                 // add to cart btn
@@ -75,8 +79,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 plus.addEventListener('click', () => {
                     let strNum = +numOfCount.textContent;
                     strNum++;
+                    console.log(strNum);
                     numOfCount.innerText = strNum;  
-                    // localStorage.setItem('numOfCount', strNum);   
+                    localStorage.setItem('numOfCount', numOfCount.innerText);  
+                    localStorage.getItem(numOfCount);
                 })
                 minus.addEventListener('click', () => {
                     let strNum = +numOfCount.textContent;
@@ -85,16 +91,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     }else{
                         strNum--;
                         numOfCount.innerText = strNum; 
-                        // localStorage.setItem('numOfCount', strNum); 
+                        localStorage.setItem('numOfCount', strNum); 
+                        localStorage.getItem(numOfCount);
                     }
                 })
                     // get count from local storage and display it
-                let count = localStorage.getItem('numOfCount');
-                if (count == null) {
-                    numOfCount.textContent = 0;
-                    } else {
-                        numOfCount.textContent = count;
-                    }
+                // let count = localStorage.getItem('numOfCount');
+                // if (numOfCount == null) {
+                //     numOfCount.textContent = 0;
+                //     } else {
+                //         numOfCount.textContent = count;
+                //     }
 
                 
                 // console.log();

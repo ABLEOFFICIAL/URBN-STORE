@@ -16,7 +16,7 @@
     <!-- news slide end-->
 
     <!-- nav start -->
-     <div class="md:hidden block">
+     <div class="block md:hidden">
         <nav class="list-none flex justify-between w-[90vw] m-auto bg-slate-50 rounded-4xl p-3 items-center fixed left-5 bottom-5 z-20">
             <div  id="side-bar-btn" class="flex w-[33%] justify-between items-center bg-black text-slate-50 rounded-4xl py-2 px-4">
                 <li><i class="cursor-pointer fa-solid fa-bars"></i></li>
@@ -31,7 +31,7 @@
     <!-- nav end -->
 
     <!-- nav for desktop -->
-    <div class="w-full hidden md:block">
+    <div class="hidden w-full md:block">
         <nav class="list-none bg-slate-50   w-[100%]  z-20">
             <div class="w-[80vw] flex justify-between items-center m-auto">
                 <div class="w-[20%]">
@@ -89,7 +89,7 @@
                 <span class="text-xl font-bold">Cart Is Empty</span>                
             </div>
             <div id="check-out" class="hidden">
-                <button class="bg-black text-white font-bold text-lg block w-full py-3 border-0 rounded-2xl my-5">CHECKOUT</button>
+                <button class="block w-full py-3 my-5 text-lg font-bold text-white bg-black border-0 rounded-2xl">CHECKOUT</button>
             </div>
         </div>
 
@@ -122,9 +122,21 @@
             <a href="#" id="women-trend">WOMEN</a>
         </div>
         <div id="trending" class="flex flex-wrap items-center justify-between w-[100%] gap-3 mt-10 products">
-
+            <!-- <a href="#" class="w-[50%] md:w-[28%] h-[40vh]">
+                <div>
+                    <img src="/images/black polo.jpg" class="w-full h-[70%] object-cover">
+                </div>
+                <div class="h-auto px-4 pt-2 pb-4">
+                    <h4 class="text-slate-800">New</h4>
+                    <p>${product.name}</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span>1 color(s)</span>
+                        <span class="text-end">${product.price}</span>
+                    </div>
+                </div>
+            </a> -->
         </div>
-     </section>
+     </section><br><br><br><br>
     <!-- trending products end-->
 
     <!-- product section (male and female) start-->
@@ -234,7 +246,7 @@
 
         <!-- culture -->
         <div class="urbn-culture">
-            <div class="text-center mb-7 cursor-pointer" id="night-mood">
+            <div class="text-center cursor-pointer mb-7" id="night-mood">
                 <i class="p-4 mr-2 text-3xl rounded-full fa-solid fa-moon bg-neutral-400"></i>
                 <span class="font-bold text-[13.5px]" id="mood-text">NIGHT MOOD</span>
             </div>
