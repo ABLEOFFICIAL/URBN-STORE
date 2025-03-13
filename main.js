@@ -23,8 +23,8 @@ function displaytrendingProduct() {
             trendCard.innerHTML = `
                 <div class="relative  md:h-[70%] h-[60%]">
                     <img src="${product.image}" class="object-cover h-[95%] m-auto">
-                    <i id="heart" class="absolute p-2 text-white bg-black rounded-full top-2.5 fa-solid fa-heart left-4 text-[10px] md:text-[14px] !hidden"></i>
-                    <i id="cart" class="fa-solid fa-cart-shopping absolute p-2 text-white bg-black rounded-full top-2.5 right-4 text-[10px] md:text-[14px] !hidden"></i>
+                    <i id="heart" class="absolute p-2 text-white bg-black rounded-full top-2.5 fa-solid fa-heart left-4 text-[10px] md:text-[14px] block md:!hidden"></i>
+                    <i id="cart" class="fa-solid fa-cart-shopping absolute p-2 text-white bg-black rounded-full top-2.5 right-4 text-[10px] md:text-[14px] block md:!hidden"></i>
                 </div>
                 <div class="h-auto px-4 pt-2 pb-4">
                     <h4 class="text-slate-800">New</h4>
