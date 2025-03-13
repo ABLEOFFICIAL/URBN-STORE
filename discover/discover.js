@@ -17,18 +17,21 @@
             data.forEach(product => {
                 let productCard = document.createElement('a');
             productCard.href = '../viewProduct/viewProduct.html?id=' + product.id;
-                productCard.classList.add('w-[48%]', 'bg-white', 'rounded-2xl', 'h-[50vh]');
+                productCard.classList.add('w-[48%]', 'lg:w-[24%]', 'lg:h-[58vh]', 'bg-white', 'rounded-2xl', 'sm:w-[30%]', 'md:w-[30%]', 'h-[40vh]', 'mb-3', 'pb-1');
                 productCard.innerHTML = `
-                    <img src="${product.image}" class="rounded-t-2xl w-[100%] m-auto h-[70%] object-cover">
-                    <div class="px-4 pt-2 pb-4">
-                        <h4 class="text-slate-800">New</h4>
-                        <p>${product.name}</p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span>1 color(s)</span>
-                            <span class="text-end">${product.price}</span>
-                        </div>
+                <div class="relative  md:h-[70%] h-[60%]">
+                    <img src="${product.image}" class="object-cover h-[95%] m-auto">
+                    <i id="heart" class="absolute p-2 text-white bg-black rounded-full top-2.5 fa-solid fa-heart left-4 text-[10px] md:text-[14px] block md:!hidden"></i>
+                    <i id="cart" class="fa-solid fa-cart-shopping absolute p-2 text-white bg-black rounded-full top-2.5 right-4 text-[10px] md:text-[14px] block md:!hidden"></i>
+                </div>
+                <div class="h-auto px-4 pt-2 pb-4">
+                    <h4 class="text-slate-800">New</h4>
+                    <p class="font-bold">${product.name}</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs md:text-lg">1 color(s)</span>
+                        <span class="px-3 py-0.5 md:px-4 md:py-1 text-white bg-black border-0 text-end rounded-2xl">$${product.price}</span>
                     </div>
-                `
+                </div>`
                 productsBox.appendChild(productCard);
                  
             })

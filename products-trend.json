@@ -4,55 +4,55 @@
         "name": "black polo",
         "price": "95",
         "image": "/images/black_polo-removebg-preview.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     },
     {
-        "id": "30",
+        "id": "7",
         "name": "blue polo",
         "price": "95",
         "image": "/images/blue_polo-removebg-preview.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     },
     {
-        "id": "11",
-        "name": "Baggy Jeans",
+        "id": "14",
+        "name": "Dad Jeans",
         "price": "95",
         "image": "/images/jean-4-removebg-preview.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     },
     {
-        "id": "21",
-        "name": "V-Neck Sweater",
+        "id": "16",
+        "name": "Crew Neck Sweater",
         "price": "95",
         "image": "/images/sweater--2-removebg-preview.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     },
     {
-        "id": "40",
-        "name": "Pullover Sweater",
+        "id": "19",
+        "name": "V-Neck Sweater",
         "price": "95",
         "image": "/images/sweater-4-removebg-preview.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     },
     {
-        "id": "41",
-        "name": "Chunky Knit Sweater",
+        "id": "20",
+        "name": "Cardigan",
         "price": "95",
         "image": "/images/sweater-5-removebg-preview.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     },
     {
-        "id": "41",
-        "name": "Vintage classic",
+        "id": "25",
+        "name": "vintage Floral",
         "price": "95",
         "image": "/images/vin-5-removebg-preview.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     },
     {
-        "id": "41",
+        "id": "26",
         "name": "Vintage SA",
         "price": "95",
         "image": "/images/vin-6-removebg-preview.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     }
 ]

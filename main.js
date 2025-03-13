@@ -18,8 +18,7 @@ function displaytrendingProduct() {
             let trendCard = document.createElement('a');
             // trendCard.className = "trendCardId";
             trendCard.href = './viewProduct/viewProduct.html?id=' + product.id;
-            trendCard.classList.add('w-[48%]', 'lg:w-[24%]', 'lg:h-[58vh]', 'bg-white', 'rounded-2xl',
-                 'sm:w-[30%]', 'md:w-[30%]', 'h-[40vh]', 'mb-3', 'pb-1');
+            trendCard.classList.add('w-[48%]', 'lg:w-[24%]', 'lg:h-[58vh]', 'bg-white', 'rounded-2xl', 'sm:w-[30%]', 'md:w-[30%]', 'h-[40vh]', 'mb-3', 'pb-1');
             trendCard.innerHTML = `
                 <div class="relative  md:h-[70%] h-[60%]">
                     <img src="${product.image}" class="object-cover h-[95%] m-auto">

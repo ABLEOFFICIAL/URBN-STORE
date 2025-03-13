@@ -3,56 +3,63 @@
         "id": "30",
         "name": "black Nike",
         "price": "95",
-        "image": "/images/black nike.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "image": "/image-new/black_nike-removebg-preview.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     },
     {
         "id": "31",
         "name": "canvas",
         "price": "95",
-        "image": "/images/canvas.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "image": "/image-new/canvas-removebg-preview.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     },
     {
         "id": "32",
         "name": "green sneaker",
         "price": "95",
-        "image": "/images/green sneaker.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "image": "/image-new/green_sneaker-removebg-preview.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     },
     {
         "id": "33",
         "name": "red sneaker",
         "price": "95",
-        "image": "/images/red sneaker.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "image": "/image-new/red_sneaker-removebg-preview.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     },
     {
         "id": "34",
         "name": "yellow sneaker",
         "price": "95",
-        "image": "/images/yellow sneaker.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "image": "/image-new/yellow_sneaker-removebg-preview.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
+    },
+    {
+        "id": "40",
+        "name": "Blue Heels",
+        "price": "95",
+        "image": "/image-new/blue_heels-removebg-preview.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     },
     {
         "id": "41",
         "name": "Nike Jordan",
         "price": "95",
-        "image": "/images/nike jordan.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "image": "/image-new/nike_jordan-removebg-preview.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     },
     {
         "id": "42",
         "name": "Red Heels",
         "price": "95",
-        "image": "/images/red heels.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "image": "/image-new/red_heels-removebg-preview.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     },
     {
         "id": "43",
         "name": "White Heels",
         "price": "95",
-        "image": "/images/white heels.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+        "image": "/image-new/white_heels-removebg-preview.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque .  "
     }
 ]
