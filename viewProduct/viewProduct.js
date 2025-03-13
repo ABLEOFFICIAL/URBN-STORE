@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <img id="clicked-pro-img" src="${product.image}" class="w-full rounded-3xl h-[50vh] object-cover ">
                     </div>
                     <div class="p-2">
-                        <h2 id="clicked-pro-name" class="font-bold text-3xl py-3">${product.name}</h2>
+                        <h2 id="clicked-pro-name" class="font-bold text-2xl py-3">${product.name}</h2>
                         <p id="clicked-pro-description" class="my-4 w-[90%]">${product.description}</p>
                         <span id="clicked-pro-price" class="block text-neutral-700 font-bold py-2">$${product.price}</span>
                         <div>
