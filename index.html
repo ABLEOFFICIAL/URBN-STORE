@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="src/input.css">
 </head>
 <body class="relative bg-neutral-200">
     <!-- news slide start-->
@@ -121,17 +122,18 @@
             <a href="#" id="men-trend" class="border-b-2 border-black">MEN</a>
             <a href="#" id="women-trend">WOMEN</a>
         </div>
-        <div id="trending" class="flex flex-wrap items-center justify-between w-[100%] gap-3 mt-10 products">
-            <!-- <a href="#" class="w-[50%] md:w-[28%] h-[40vh]">
-                <div>
-                    <img src="/images/black polo.jpg" class="w-full h-[70%] object-cover">
+        <div id="trending" class="flex flex-wrap items-center justify-between w-[100%] gap-[4px] mt-10 products">
+            <!-- <a href="#" class="w-[50%] md:w-[24%] h-[58vh] bg-white rounded-2xl border-2 border-red-500">
+                <div class="relative  h-[70%]">
+                    <img src="/images/black_polo-removebg-preview.png" class="object-cover h-full m-auto">
+                    <i class="absolute p-2 text-white bg-black rounded-full top-3 fa-solid fa-heart right-4"></i>
                 </div>
                 <div class="h-auto px-4 pt-2 pb-4">
                     <h4 class="text-slate-800">New</h4>
                     <p>${product.name}</p>
                     <div class="flex items-center justify-between mb-4">
                         <span>1 color(s)</span>
-                        <span class="text-end">${product.price}</span>
+                        <span class="px-4 py-1 text-white bg-black border-0 text-end rounded-2xl">$40</span>
                     </div>
                 </div>
             </a> -->
@@ -141,11 +143,13 @@
 
     <!-- product section (male and female) start-->
      <section class="my-14">
-        <div class="relative bg-[url('/images/banner-1.jpg')] h-[60vh] w-[95vw] md:w-[77vw] md:bg-top m-auto rounded-3xl -z-0">
-            <div class="absolute p-4 text-white bottom-5">
+        <div class="relative bg-[url('/images/banner-1.jpg')] h-[60vh] md:h-[80vh] w-[95vw] md:w-[77vw] md:bg-right m-auto rounded-3xl -z-0">
+            <div class="absolute p-4 text-white bottom-5 md:left-[50%] md:top-[50%] md:transform md:-translate-x-[50%] md:-translate-y-[50%] md:flex md:flex-col md:justify-center ">
                 <h1 class="mb-4 text-3xl font-bold">READY-TO-WEAR RESORT 2025</h1>
-                <a id="women" href="./product/productF.html" class="bg-white text-black px-5 py-1.5 rounded-2xl mr-2 font-bold">FOR HER</a>
-                <a id="men" href="./product/productM.html" class="bg-white text-black px-5 py-1.5 rounded-2xl font-bold">FOR HIM</a>
+                <div class="md:flex md:justify-center">
+                    <a id="women" href="./product/productF.html" class="bg-white text-black px-5 py-1.5 rounded-2xl mr-2 font-bold">FOR HER</a>
+                    <a id="men" href="./product/productM.html" class="bg-white text-black px-5 py-1.5 rounded-2xl font-bold">FOR HIM</a>
+                </div>
             </div>
         </div>
      </section>
@@ -153,23 +157,25 @@
 
     <!-- bag and shoe start-->
      <section  class="my-14 md:w-[77vw] m-auto">
-        <div  class="p-5">
+        <div class="p-5">
             <h2 class="mb-1 text-3xl font-bold text-start">Step In Elegance</h2>
             <span class="text-sm text-slate-800">Carry The Prestige</span>
         </div>
-        <!-- shoe -->
-        <div class="relative bg-[url('/images/shoe-banner.jpg')] h-[60vh] w-[95vw] md:w-[77vw] m-auto rounded-3xl -z-0 bg-cover bg-no-repeat mb-7">
-            <div class="absolute p-4 text-white bottom-5">
-                <h1 class="mb-4 text-3xl font-bold">FOOT WEARS</h1>
-                <a href="./product/shoe-product.html" class="bg-white text-black px-5 py-1.5 rounded-2xl mr-2 font-bold">SHOP NOW</a> 
+        <div class="md:flex md:justify-between md:items-center md:w-full md:m-auto">
+            <!-- shoe -->
+            <div class="relative bg-[url('/images/shoe-banner.jpg')] h-[60vh] w-[95vw] md:w-[48%] m-auto rounded-3xl -z-0 bg-cover bg-no-repeat mb-7 md:mb-0 md:h-[70vh]">
+                <div class="absolute p-4 text-white bottom-5 ">
+                    <h1 class="mb-4 text-3xl font-bold">FOOT WEARS</h1>
+                    <a href="./product/shoe-product.html" class="bg-white text-black px-5 py-1.5 rounded-2xl mr-2 font-bold">SHOP NOW</a> 
+                </div>
             </div>
-        </div>
-        
-        <!-- bag -->
-        <div class="relative bg-[url('/images/bag-banner.jpg')] h-[60vh] w-[95vw] md:w-[77vw] md:bg-cover bg-cover lg:bg-center m-auto rounded-3xl -z-0">
-            <div class="absolute p-4 text-white bottom-5">
-                <h1 class="mb-4 text-3xl font-bold">VINTAGE BAGS</h1>
-                <a href="./product/product-bag.html" class="bg-white text-black px-5 py-1.5 rounded-2xl mr-2 font-bold">SHOP NOW</a>
+            
+            <!-- bag -->
+            <div class="relative bg-[url('/images/bag-banner.jpg')] h-[60vh] w-[95vw] md:w-[48%]  bg-cover lg:bg-center m-auto rounded-3xl -z-0 md:h-[70vh] md:bg-cover">
+                <div class="absolute p-4 text-white bottom-5">
+                    <h1 class="mb-4 text-3xl font-bold">VINTAGE BAGS</h1>
+                    <a href="./product/product-bag.html" class="bg-white text-black px-5 py-1.5 rounded-2xl mr-2 font-bold">SHOP NOW</a>
+                </div>
             </div>
         </div>
      </section>
@@ -178,34 +184,47 @@
     <!-- Customer testimonials start-->
      <section class="overflow-hidden">
         <h1 class="p-5 text-3xl font-bold lg:w-[80vw] m-auto">TESTIMONIALS</h1>
-        <div class="overflow-x-scroll scrollbar-hide">
-            <div class="pt-4 flex flex-nowrap w-[400%] sm:w-[200%]">
-                <div class="w-[80vw] sm:w-[40vw] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center">
+        <!-- <div class=""> removed overflow-x-scroll from this class -->
+            <div class="relative h-[60vh] sm:h-auto pt-4 pb-3 sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 w-[80vw] sm:w-[77vw] m-auto overflow-hidden">
+                <div class="absolute left-full sm:relative sm:left-0 w-[95%] sm:w-[90%] m-auto  px-10 py-7 bg-white rounded-3xl flex flex-col items-center card card1">
                     <img src="/images/profile-photo-4.jpg" alt="" class="object-cover rounded-full w-14 h-14">
                     <span class="pt-2 pb-4 font-bold">Josh</span>
+                    <p class="w-full mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
+                <div class="absolute left-full sm:relative sm:left-0 w-[95%] sm:w-[90%]  m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center card card2">
+                    <img src="/images/WhatsApp Image 2025-03-11 at 17.38.25_78dde7c2.jpg" alt="" class="object-cover rounded-full w-14 h-14">
+                    <span class="pt-2 pb-4 font-bold">Ugochi</span>
                     <p class="mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
                     <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                 </div>
-                <div class="w-[80vw] sm:w-[40vw] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center">
-                    <img src="/images/profile-photo-1.jpg" alt="" class="object-cover rounded-full w-14 h-14">
-                    <span class="pt-2 pb-4 font-bold">Kenny</span>
-                    <p class="mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
-                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                </div>
-                <div class="w-[80vw] sm:w-[40vw] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center">
+                <div class="absolute left-full sm:relative sm:left-0 w-[95%] sm:w-[90%] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center card card3">
                     <img src="/images/profile-photo-3.jpg" alt="" class="object-cover rounded-full w-14 h-14">
                     <span class="pt-2 pb-4 font-bold">Gbemi</span>
                     <p class="mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
                     <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                 </div>
-                <div class="w-[80vw] sm:w-[40vw] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center">
+                <div class="absolute left-full sm:relative sm:left-0 w-[95%] sm:w-[90%] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center card card4">
                     <img src="/images/profile-photo-2.jpg" alt="" class="object-cover rounded-full w-14 h-14">
                     <span class="pt-2 pb-4 font-bold">Phil</span>
                     <p class="mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
                     <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                 </div>
+                <div class="absolute left-full sm:relative sm:left-0 w-[95%] sm:w-[90%] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center card card4">
+                    <img src="/images/profile-photo-2.jpg" alt="" class="object-cover rounded-full w-14 h-14">
+                    <span class="pt-2 pb-4 font-bold">Phil</span>
+                    <p class="mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
+                <div class="absolute left-full sm:relative sm:left-0 w-[95%] sm:w-[90%] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center card card4">
+                    <img src="/images/profile-photo-2.jpg" alt="" class="object-cover rounded-full w-14 h-14">
+                    <span class="pt-2 pb-4 font-bold">Phil</span>
+                    <p class="mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
+
             </div>   
-        </div>
+        <!-- </div> -->
      </section>
     <!-- Customer testimonials end-->
 
@@ -213,26 +232,32 @@
      <section class="p-6 my-14 lg:w-[80vw] m-auto">
         <!-- socials -->
         <div class="socials">
-            <div class="text-3xl w-[60vw] flex flex-row justify-between m-auto">
+            <div class="text-3xl w-[60vw] sm:w-[40vw] lg:w-[20vw]   flex flex-row justify-between m-auto">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 <a href="#"><i class="fa-brands fa-snapchat"></i></a>
             </div>
             <div >
-                <img src="/images/logo-black-removebg-preview.png" alt="" class="m-auto">
+                <img src="/images/logo-black-removebg-preview.png" alt="" class="m-auto w-40">
             </div>
         </div>
 
         <hr class="w-[90vw] my-24 m-auto">
         
         <!-- footer element -->
-        <div class="footer-element h-[20vh]  flex flex-row justify-between">
-            <div class="flex flex-col justify-between">
+        <div class="grid grid-cols-1 footer-element  sm:flex flex-row justify-between  border-2 border-red-600 h-auto">
+            <div class="flex flex-col justify-between mb-3">
                 <a href="#">HOME</a>
                 <a href="#">NEW ARRIVALS</a>
                 <a href="#">COLLECTIONS</a>
                 <a href="#">CONTACT US</a>
+            </div>
+            <div class="flex flex-col justify-between mb-3">
+                <a href="#">BEST SELLERS</a>
+                <a href="#">FAQS</a>
+                <a href="#">SHIPPING & RETURNS</a>
+                <a href="#">PAYMENT METHOD</a>
             </div>
             <div class="flex flex-col justify-between">
                 <a href="#">BEST SELLERS</a>

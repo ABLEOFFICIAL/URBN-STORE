@@ -3,42 +3,56 @@
         "id": "6",
         "name": "black polo",
         "price": "95",
-        "image": "/images/black polo.jpg",
+        "image": "/images/black_polo-removebg-preview.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "30",
-        "name": "black Nike",
+        "name": "blue polo",
         "price": "95",
-        "image": "/images/black nike.jpg",
+        "image": "/images/blue_polo-removebg-preview.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "11",
         "name": "Baggy Jeans",
         "price": "95",
-        "image": "/images/jean-1.jpg",
+        "image": "/images/jean-4-removebg-preview.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "21",
-        "name": "Vintage Blue",
+        "name": "V-Neck Sweater",
         "price": "95",
-        "image": "/images/vin-1.jpg",
+        "image": "/images/sweater--2-removebg-preview.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "40",
-        "name": "Blue Heels",
+        "name": "Pullover Sweater",
         "price": "95",
-        "image": "/images/blue heels.jpg",
+        "image": "/images/sweater-4-removebg-preview.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     },
     {
         "id": "41",
-        "name": "Nike Jordan",
+        "name": "Chunky Knit Sweater",
         "price": "95",
-        "image": "/images/nike jordan.jpg",
+        "image": "/images/sweater-5-removebg-preview.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+    },
+    {
+        "id": "41",
+        "name": "Vintage classic",
+        "price": "95",
+        "image": "/images/vin-5-removebg-preview.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
+    },
+    {
+        "id": "41",
+        "name": "Vintage SA",
+        "price": "95",
+        "image": "/images/vin-6-removebg-preview.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente."
     }
 ]

@@ -29,18 +29,18 @@
 
 
 
-                        <div class=" flex justify-center">
-                    <i class="fa-regular fa-user text-white bg-black text-4xl border-0 rounded-full p-6 mb-3"></i>
+                        <div class="flex justify-center ">
+                    <i class="p-6 mb-3 text-4xl text-white bg-black border-0 rounded-full fa-regular fa-user"></i>
                 </div>
-                <div class="flex flex-col justify-center items-center">
+                <div class="flex flex-col items-center justify-center">
                     <p id="user-name" class="font-bold">FULL NAME</p>
                 </div>
                 <div class="mt-5">
                     <!-- email box -->
                     <div class="flex gap-3 border-2 border-black rounded w-[90%] px-3 py-2 mb-4">
-                        <div><i class="fa-regular fa-envelope text-3xl"></i></div>
+                        <div><i class="text-3xl fa-regular fa-envelope"></i></div>
                         <div>
-                            <h4 class="font-bold text-lg">Email Address</h4>
+                            <h4 class="text-lg font-bold">Email Address</h4>
                             <span id="user-email" class="text-neutral-600">emailaddress@gmail.com</span>
                         </div>
                         <div>
@@ -49,9 +49,9 @@
                     </div>
                     <!-- phone number box -->
                     <div class="flex gap-3 border-2 border-black rounded w-[90%] px-3 py-2 mb-4">
-                        <div><i class="fa-solid fa-phone text-3xl"></i></div>
+                        <div><i class="text-3xl fa-solid fa-phone"></i></div>
                         <div>
-                            <h4 class="font-bold text-lg">Mobile Number</h4>
+                            <h4 class="text-lg font-bold">Mobile Number</h4>
                             <span class="text-neutral-600"></span>
                         </div>
                         <div>
@@ -60,9 +60,9 @@
                     </div>
                     <!-- location box -->
                     <div class="flex gap-3 border-2 border-black rounded w-[90%] px-3 py-2">
-                        <div><i class="fa-solid fa-location-dot text-3xl"></i></div>
+                        <div><i class="text-3xl fa-solid fa-location-dot"></i></div>
                         <div>
-                            <h4 class="font-bold text-lg">Home Address</h4>
+                            <h4 class="text-lg font-bold">Home Address</h4>
                             <span class="text-neutral-600"></span>
                         </div>
                         <div>
@@ -80,14 +80,14 @@
     after:absolute after:content-[''] after:bg-neutral-400 after:h-[15vh] after:w-[35%] after:bottom-0 after:left-0 after:rounded-tr-full
 
     // viewing clicked product
-                <div class="text-center m-auto">
+                <div class="m-auto text-center">
                 <img src="../images/green sneaker.jpg" class="w-full rounded-3xl h-[50vh] object-cover ">
             </div>
             <div class="p-2">
-                <h2 class="font-bold text-3xl py-3">Green Sneaker</h2>
-                <span class="block text-neutral-700 font-bold py-2">$50</span>
-                <button class="bg-neutral-400 text-black font-bold rounded-xl py-2 px-4 mr-2">CHECK OUT</button>
-                <button class="bg-black text-white font-bold rounded-xl py-2 px-4">ADD TO CART</button>
+                <h2 class="py-3 text-3xl font-bold">Green Sneaker</h2>
+                <span class="block py-2 font-bold text-neutral-700">$50</span>
+                <button class="px-4 py-2 mr-2 font-bold text-black bg-neutral-400 rounded-xl">CHECK OUT</button>
+                <button class="px-4 py-2 font-bold text-white bg-black rounded-xl">ADD TO CART</button>
                 <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas veritatis itaque! Neque error quo doloremque dolore, voluptatum, beatae officiis consequuntur accusantium molestiae sunt nam doloribus necessitatibus, tempora ipsa sapiente.</p>
             </div>
 
@@ -144,7 +144,7 @@
                                     <img src="/images/black nike.jpg" class="w-20 h-20 rounded-lg">
                                 </div>
                                 <div class=" w-[52%]">
-                                    <p class="font-bold text-xl">Black Nike Jordan</p>
+                                    <p class="text-xl font-bold">Black Nike Jordan</p>
                                     <p>$100.00 * 2 <span class="font-bold">$200</span></p>
                                 </div>
                                 <div class="w-[15%] text-center">
@@ -153,5 +153,63 @@
                             </div>
                         </div>
                         <div>
-                            <button class="bg-black text-white font-bold text-lg block w-full py-3 border-0 rounded-2xl my-5">CHECKOUT</button>
+                            <button class="block w-full py-3 my-5 text-lg font-bold text-white bg-black border-0 rounded-2xl">CHECKOUT</button>
                         </div>
+
+     <section class="overflow-hidden">
+        <h1 class="p-5 text-3xl font-bold lg:w-[80vw] m-auto">TESTIMONIALS</h1>
+        <div class="gap-4 p-4 md:grid md:grid-cols-3"> <!--removed overflow-x-scroll from this class-->
+            <div class="pt-4 flex flex-nowrap w-[400%] sm:w-[200%]">
+                <div class="w-[80vw] sm:w-[40vw] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center">
+                    <img src="/images/profile-photo-4.jpg" alt="" class="object-cover rounded-full w-14 h-14">
+                    <span class="pt-2 pb-4 font-bold">Josh</span>
+                    <p class="mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
+                <div class="w-[80vw] sm:w-[40vw] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center">
+                    <img src="/images/WhatsApp Image 2025-03-11 at 17.38.25_78dde7c2.jpg" alt="" class="object-cover rounded-full w-14 h-14">
+                    <span class="pt-2 pb-4 font-bold">Ugochi</span>
+                    <p class="mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
+                <div class="w-[80vw] sm:w-[40vw] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center">
+                    <img src="/images/profile-photo-3.jpg" alt="" class="object-cover rounded-full w-14 h-14">
+                    <span class="pt-2 pb-4 font-bold">Gbemi</span>
+                    <p class="mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
+                <div class="w-[80vw] sm:w-[40vw] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center">
+                    <img src="/images/profile-photo-2.jpg" alt="" class="object-cover rounded-full w-14 h-14">
+                    <span class="pt-2 pb-4 font-bold">Phil</span>
+                    <p class="mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
+            </div>   
+        </div>
+     </section>
+
+
+                 <div class="w-[95%] md:w-[90%] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center">
+                    <img src="/images/profile-photo-4.jpg" alt="" class="object-cover rounded-full w-14 h-14">
+                    <span class="pt-2 pb-4 font-bold">Josh</span>
+                    <p class="mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
+                <div class="w-[95%] md:w-[90%] sm:w-[45%] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center">
+                    <img src="/images/WhatsApp Image 2025-03-11 at 17.38.25_78dde7c2.jpg" alt="" class="object-cover rounded-full w-14 h-14">
+                    <span class="pt-2 pb-4 font-bold">Ugochi</span>
+                    <p class="mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
+                <div class="w-[95%] md:w-[90%] sm:w-[45%] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center">
+                    <img src="/images/profile-photo-3.jpg" alt="" class="object-cover rounded-full w-14 h-14">
+                    <span class="pt-2 pb-4 font-bold">Gbemi</span>
+                    <p class="mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>
+                <div class="w-[95%] md:w-[90%] sm:w-[45%] m-auto px-10 py-7 bg-white rounded-3xl flex flex-col items-center">
+                    <img src="/images/profile-photo-2.jpg" alt="" class="object-cover rounded-full w-14 h-14">
+                    <span class="pt-2 pb-4 font-bold">Phil</span>
+                    <p class="mb-2 text-center text-slate-900">cros detru dolor sit amet consectetur adipisicing elit. Sapiente tempore tempora inventore voluptas nostrum?</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                </div>

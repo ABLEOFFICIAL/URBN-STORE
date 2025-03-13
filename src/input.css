@@ -1,1 +1,44 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 639px) {   
+    .card {
+        animation: toLeft 40s linear infinite;
+        mask-image: linear-gradient(
+            to right,
+            rgba(0,0,0,0),
+            rgba(0,0,0,1) 20%,
+            rgba(0,0,0,1) 80%,
+            rgba(0,0,0,0)
+            );
+    }
+
+    .card1{
+        animation-delay: calc(40s / 4 * ( 4 - 1 ) * -1);
+    }
+
+    .card2{
+        animation-delay: calc(40s / 4 * ( 4 - 2 ) * -1);
+    }
+
+    .card3{
+        animation-delay: calc(40s / 4 * ( 4 - 3 ) * -1);
+    }
+
+    .card4{
+        animation-delay: calc(40s / 4 * ( 4 - 4 ) * -1);
+    }
+}
+
+@keyframes toLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-330vw);
+    }
+}

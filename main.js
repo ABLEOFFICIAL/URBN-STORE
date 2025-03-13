@@ -16,24 +16,60 @@ function displaytrendingProduct() {
     .then(products => {
         products.forEach(product => {     
             let trendCard = document.createElement('a');
+            // trendCard.className = "trendCardId";
             trendCard.href = './viewProduct/viewProduct.html?id=' + product.id;
-            trendCard.classList.add('w-[48%]','sm:w-[30%]', 'bg-white', 'rounded-2xl', 'h-[50vh]', 'mb-2', 'md:h-[60vh]');
+            trendCard.classList.add('w-[48%]', 'lg:w-[24%]', 'lg:h-[58vh]', 'bg-white', 'rounded-2xl',
+                 'sm:w-[30%]', 'md:w-[30%]', 'h-[50vh]', 'mb-3', 'py-2');
             trendCard.innerHTML = `
-                            <img src="${product.image}" alt="" class="rounded-t-2xl w-[100%] m-auto h-[70%] object-cover">
-                                <div class="px-4 pt-2 pb-4">
-                                    <h4 class="text-slate-800">New</h4>
-                                    <p>${product.name}</p>
-                                    <div class="flex items-center justify-between mb-4">
-                                        <span>1 color(s)</span>
-                                        <span class="text-end">${product.price}</span>
-                                    </div>
-                                </div>`;
+                <div class="relative  md:h-[70%] h-[65%]">
+                    <img src="${product.image}" class="object-cover h-full m-auto">
+                    <i id="heart" class="absolute p-2 text-white bg-black rounded-full top-2.5 fa-solid fa-heart left-4 text-[10px] md:text-[14px] !hidden"></i>
+                    <i id="cart" class="fa-solid fa-cart-shopping absolute p-2 text-white bg-black rounded-full top-2.5 right-4 text-[10px] md:text-[14px] !hidden"></i>
+                </div>
+                <div class="h-auto px-4 pt-2 pb-4">
+                    <h4 class="text-slate-800">New</h4>
+                    <p class="font-bold">${product.name}</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs md:text-lg">1 color(s)</span>
+                        <span class="px-3 py-0.5 md:px-4 md:py-1 text-white bg-black border-0 text-end rounded-2xl">$${product.price}</span>
+                    </div>
+                </div>`;
+                let heart = trendCard.querySelector('#heart');
+                let cart = trendCard.querySelector('#cart');
+
+                // let trendCardId = document.querySelectorAll('.trendCardId')
+                // Add mouseover event to show the heart and cart icons
+                trendCard.addEventListener('mouseover', () => {
+                    heart.classList.remove('!hidden'); // Show heart icon
+                    cart.classList.remove('!hidden'); // Show cart icon
+                });
+
+                // Add mouseout event to hide the heart and cart icons
+                trendCard.addEventListener('mouseout', () => {
+                    heart.classList.add('!hidden'); // Hide heart icon
+                    cart.classList.add('!hidden'); // Hide cart icon
+                });
+
+                
             trending.appendChild(trendCard);
             // console.log(trendCard.href);
             
         })
     })
 }
+// trendcard former class
+// ('w-[48%]','sm:w-[30%]', 'bg-white', 'rounded-2xl', 'h-[50vh]', 'mb-2', 'md:h-[60vh]')
+
+// innerHTML TRENDCARD
+// <img src="${product.image}" alt="" class="rounded-t-2xl w-[100%] m-auto h-[70%] object-cover">
+// {/* <div class="px-4 pt-2 pb-4">
+// <h4 class="text-slate-800">New</h4>
+// <p>${product.name}</p>
+// <div class="flex items-center justify-between mb-4">
+//     <span>1 color(s)</span>
+//     <span class="text-end">${product.price}</span>
+// </div>
+// </div> */}
 displaytrendingProduct();
 
 
