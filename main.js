@@ -19,10 +19,10 @@ function displaytrendingProduct() {
             // trendCard.className = "trendCardId";
             trendCard.href = './viewProduct/viewProduct.html?id=' + product.id;
             trendCard.classList.add('w-[48%]', 'lg:w-[24%]', 'lg:h-[58vh]', 'bg-white', 'rounded-2xl',
-                 'sm:w-[30%]', 'md:w-[30%]', 'h-[60vh]', 'mb-3', 'py-2');
+                 'sm:w-[30%]', 'md:w-[30%]', 'h-[40vh]', 'mb-3', 'pb-1');
             trendCard.innerHTML = `
-                <div class="relative  md:h-[70%] h-[65%]">
-                    <img src="${product.image}" class="object-cover h-full m-auto">
+                <div class="relative  md:h-[70%] h-[60%]">
+                    <img src="${product.image}" class="object-cover h-[95%] m-auto">
                     <i id="heart" class="absolute p-2 text-white bg-black rounded-full top-2.5 fa-solid fa-heart left-4 text-[10px] md:text-[14px] !hidden"></i>
                     <i id="cart" class="fa-solid fa-cart-shopping absolute p-2 text-white bg-black rounded-full top-2.5 right-4 text-[10px] md:text-[14px] !hidden"></i>
                 </div>
