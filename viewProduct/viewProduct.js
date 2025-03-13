@@ -9,11 +9,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // go back
     let backBtn = document.getElementById('back-btn');
     // let productListArray;
+    // open cart section
+    let cartSctn = document.querySelector('#cart-sctn');
+    let cartIcon = document.querySelector('#cart-icon');
+    let xBtn = document.querySelector('#x-btn');
 
 
     // cart product
     let showCartProduct = document.getElementById('show-cart-product');
     let emptyCart = document.getElementById('empty-cart');
+
+    cartIcon.addEventListener('click', showCart);
+
+    function showCart() {
+        cartSctn.classList.remove('hidden');  
+    };
+
+    // remove remove cart section
+    function hideCart(event){
+        // event.stopPropagation();
+            cartSctn.classList.add('hidden');
+    }
+    xBtn.addEventListener('click', hideCart);
     
 
     fetch('../productListArray.json')
@@ -53,14 +70,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="p-2">
                         <h2 id="clicked-pro-name" class="font-bold text-3xl py-3">${product.name}</h2>
-                        <span id="clicked-pro-price" class="block text-neutral-700 font-bold py-2">${product.price}</span>
-                        <div class="mr-4 inline-block">
-                            <button id="minus" class="bg-neutral-400 text-black font-bold py-2 px-3 rounded-l-lg">-</button>
-                            <button id="numOfCount" class="bg-neutral-400 text-black font-bold py-2 px-5">0</button>
-                            <button id="plus" class="bg-neutral-400 text-black font-bold py-2 px-3 rounded-r-lg">+</button>
-                        </div>
-                        <button id="add-to-cart" class="bg-black text-white font-bold rounded-xl py-2.5 px-4">ADD TO CART</button>
                         <p id="clicked-pro-description" class="my-4 w-[90%]">${product.description}</p>
+                        <span id="clicked-pro-price" class="block text-neutral-700 font-bold py-2">$${product.price}</span>
+                        <div>
+                           <i class="fa-solid fa-star text-black text-sm"></i>
+                           <i class="fa-solid fa-star text-black text-sm"></i>
+                           <i class="fa-solid fa-star text-black text-sm"></i>
+                           <i class="fa-solid fa-star text-black text-sm"></i>
+                           <i class="fa-solid fa-star text-black text-sm"></i>
+                           <span class="underline">400 reviews</span>
+                        </div><br><br>
+                        <button id="add-to-cart" class="bg-black text-white font-bold rounded-xl py-3.5 px-4 w-full">ADD TO CART</button>
                     </div>`;
 
                 // increase number of products
@@ -69,32 +89,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 
                 
-                localStorage.setItem('numOfCount', JSON.stringify(numOfCount.textContent)); 
-                localStorage.getItem(numOfCount.textContent);
+                // localStorage.setItem('numOfCount', JSON.stringify(numOfCount.textContent)); 
+                // localStorage.getItem(numOfCount.textContent);
                 let plus = document.getElementById('plus');
 
                 // add to cart btn
                 let addToCart = document.getElementById('add-to-cart');
 
-                plus.addEventListener('click', () => {
-                    let strNum = +numOfCount.textContent;
-                    strNum++;
-                    console.log(strNum);
-                    numOfCount.innerText = strNum;  
-                    localStorage.setItem('numOfCount', numOfCount.innerText);  
-                    localStorage.getItem(numOfCount);
-                })
-                minus.addEventListener('click', () => {
-                    let strNum = +numOfCount.textContent;
-                    if(numOfCount.textContent == '0'){
-                        numOfCount.textContent = numOfCount.textContent;
-                    }else{
-                        strNum--;
-                        numOfCount.innerText = strNum; 
-                        localStorage.setItem('numOfCount', strNum); 
-                        localStorage.getItem(numOfCount);
-                    }
-                })
+                // plus.addEventListener('click', () => {
+                //     let strNum = +numOfCount.textContent;
+                //     strNum++;
+                //     console.log(strNum);
+                //     numOfCount.innerText = strNum;  
+                //     localStorage.setItem('numOfCount', numOfCount.innerText);  
+                //     localStorage.getItem(numOfCount);
+                // })
+                // minus.addEventListener('click', () => {
+                //     let strNum = +numOfCount.textContent;
+                //     if(numOfCount.textContent == '0'){
+                //         numOfCount.textContent = numOfCount.textContent;
+                //     }else{
+                //         strNum--;
+                //         numOfCount.innerText = strNum; 
+                //         localStorage.setItem('numOfCount', strNum); 
+                //         localStorage.getItem(numOfCount);
+                //     }
+                // })
                     // get count from local storage and display it
                 // let count = localStorage.getItem('numOfCount');
                 // if (numOfCount == null) {
