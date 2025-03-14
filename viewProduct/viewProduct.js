@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let clickedProDescription = document.getElementById('clicked-pro-description');
     // go back
     let backBtn = document.getElementById('back-btn');
-    // let productListArray;
+    let productListArray;
     // open cart section
     let cartSctn = document.querySelector('#cart-sctn');
     let cartIcon = document.querySelector('#cart-icon');
