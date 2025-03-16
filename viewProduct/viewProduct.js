@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let clickedProDescription = document.getElementById('clicked-pro-description');
     // go back
     let backBtn = document.getElementById('back-btn');
-    let productListArray = JSON.parse(localStorage.getItem('productListArray'));
+    let productListArray;
     // open cart section
     let cartSctn = document.querySelector('#cart-sctn');
     let cartIcon = document.querySelector('#cart-icon');
@@ -36,13 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('../productListArray.json')
     .then(response => response.json())
     .then(data => {
-        data = productListArray;
-        console.log(productListArray);
-        let savedItem = JSON.parse(localStorage.getItem('productListArray'));
-        console.log(savedItem);
+        data = JSON.parse(localStorage.getItem('productListArray'));
+        productListArray = data;
+        // let productArray = Object.values(productListArray)
+
         
-    }
-    )
+    })
 
     const productURL = new URLSearchParams(window.location.search);
     // console.log(productURL.get('id'));
@@ -138,7 +137,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 
                                  // save to local storage
                                 localStorage.setItem('productListArray', JSON.stringify(productListArray));
-
+                                let savedItem = JSON.parse(localStorage.getItem('productListArray'));
+                                console.log(savedItem);
                                
                                 // localStorage.setItem('cartItem', JSON.stringify(p));
                                 
