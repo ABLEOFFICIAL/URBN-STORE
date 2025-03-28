@@ -1,34 +1,45 @@
-document.addEventListener('DOMContentLoaded', () => {
-    let savedItem = JSON.parse(localStorage.getItem('productListArray'));
-    console.log(savedItem);
-    
-let savedNum = JSON.parse(localStorage.getItem('numOfCount'));
-// console.log(savedNum);
+document.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener("cartUpdated", addProduct); // Update cart dynamically if an item is added
 
+  // function loadCart() {
+  //     // Get the cart from localStorage
+  //     let productListArray = JSON.parse(localStorage.getItem('cart')) || [];
 
-// cart product
-let showCartProduct = document.getElementById('show-cart-product');
-let emptyCart = document.getElementById('empty-cart');
-let count = localStorage.getItem('numOfCount');
+  //     // Display the cart items (you can loop through them and add to the UI)
+  //     productListArray.forEach(item => {
+  //         console.log(item);  // You can display each item on your cart page here
+  //     });
+  // }
 
+  //   let savedNum = JSON.parse(localStorage.getItem("numOfCount"));
+  // console.log(savedNum);
 
+  // cart product
+  let showCartProduct = document.getElementById("show-cart-product");
+  let emptyCart = document.getElementById("empty-cart");
+  let count = localStorage.getItem("numOfCount");
 
-if(savedItem) {
-    // button
-    let checkOut = document.getElementById('check-out');
-    // console.log(checkOut);
-    
-    savedItem.forEach(item => {
-       // console.log(savedItem.name);
-    function addProduct(){
+  //   if (savedItem) {
+  // button
+  let checkOut = document.getElementById("check-out");
+  // console.log(checkOut);
 
-        
-
-        // showCartProduct.textContent = '';
-        emptyCart.classList.add('hidden');
-        showCartProduct.classList.remove('flex', 'flex-col', 'h-[60vh]', 'justify-center', 'items-center');
-        showCartProduct.classList.add('p-3')
-        showCartProduct.innerHTML += `
+  function addProduct() {
+    // Get the cart from localStorage
+    let productListArray = JSON.parse(localStorage.getItem("cart")) || [];
+    console.log(productListArray);
+    // showCartProduct.textContent = '';
+    emptyCart.classList.add("hidden");
+    showCartProduct.classList.remove(
+      "flex",
+      "flex-col",
+      "h-[60vh]",
+      "justify-center",
+      "items-center"
+    );
+    productListArray.forEach((item) => {
+      showCartProduct.classList.add("p-3");
+      showCartProduct.innerHTML += `
             <div class="w-[100vw]">
                 <div id="del-parent" class="flex mb-2 justify-start gap-3 items-center w-[95%] p-6 bg-white rounded-2xl">
                     <div class="w-[26%]">
@@ -57,28 +68,26 @@ if(savedItem) {
 
                 </div>
             </div>`;
-            checkOut.classList.remove('hidden');
+      checkOut.classList.remove("hidden");
+    });
+    // delete added product
+    let parentP = document.querySelectorAll("#del-parent");
+    let delProduct = document.querySelectorAll("#del-product");
 
-            // delete added product
-            let parentP = document.querySelectorAll('#del-parent');
-            let delProduct = document.querySelectorAll('#del-product');
-            
-            
-            delProduct.forEach(del => {
-                del.addEventListener('click', function(e) {
-                    e.target.parentElement.parentElement.remove();
-                    savedItem.pop()
-                })
-            })
-            // console.log(delProduct);
-            
-        // // save to local storage
-        // localStorage.setItem('cartItem', JSON.stringify(p));
-        // let savedItem = localStorage.getItem('cartItem');
-        // console.log(savedItem);
-    }
-    addProduct();         
-    })
+    delProduct.forEach((del) => {
+      del.addEventListener("click", function (e) {
+        e.target.parentElement.parentElement.remove();
+        productListArray.pop();
+      });
+    });
+    // console.log(delProduct);
 
-}
-})
+    // // save to local storage
+    // localStorage.setItem('cartItem', JSON.stringify(p));
+    // let savedItem = localStorage.getItem('cartItem');
+    // console.log(savedItem);
+  }
+  // addProduct();
+
+  //   }
+});
