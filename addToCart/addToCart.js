@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="w-[75%] flex flex-col gap-2">
                         <div class="flex justify-between items-center">
                             <div class=" w-[52%]">
-                                <p class="font-bold text-xl">${item.name}</p>
+                                <p class="font-bold text-xs">${item.name}</p>
                             </div>
                             <div class="w-[15%] text-center">
                                 <p class="font-bold">$${item.price}</P>

@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // })
 
   const productURL = new URLSearchParams(window.location.search);
-  // console.log(productURL.get('id'));
   const productID = productURL.get("id");
   findClickedProduct();
 
@@ -54,8 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((products) => {
         products.find((product) => {
           if (product.id == productID) {
-            // console.log(product);
-
             // clickedProImg.src = product.image;
             // clickedProName.innerText = product.name;
             // clickedProPrice.innerText = product.price;
