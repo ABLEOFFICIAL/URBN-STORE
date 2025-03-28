@@ -10,7 +10,7 @@
 </head>
 <body class="relative bg-neutral-200">
     <!-- news slide start-->
-     <div class="bg-black news-slide text-slate-50">
+     <div id="news-slide" class="bg-black news-slide text-slate-50">
         <div id="info-1" class=" w-[100vw] transition-all duration-300 ease-in-out p-2 text-center text-sm">FREE EXPRESS SHIPPING</div>
         <div id="info-2" class=" hidden w-[100vw] transition-all duration-300 ease-in-out p-2 text-center text-sm">SUBSCRIBE TO OUR NEWSLETTER</div>
      </div>
@@ -33,12 +33,13 @@
 
     <!-- nav for desktop -->
     <div class="hidden w-full md:block">
-        <nav class="list-none bg-slate-50   w-[100%]  z-20">
+        <nav class="list-none bg-slate-50   w-[100%]  z-20 header">
             <div class="w-[80vw] flex justify-between items-center m-auto">
                 <div class="w-[20%]">
-                    <img src="/images/logo-black-removebg-preview.png" alt="">
+                    <img src="/images/logo-black-removebg-preview.png" id="logo">
+                    
                 </div>
-                <div class="lg:w-[40%] w-[60%] flex justify-between items-center font-bold">
+                <div class="lg:w-[40%] w-[60%] flex justify-between items-center font-bold nav">
                     <li class="border-b-2 border-black leading-20"><a href="./index.html">HOME</a></li>
                     <li id="account-icon"><a href="#">PRODUCTS</a></i></li>
                     <li id="cart-icon" class="cursor-pointer">ABOUT</li>
@@ -272,7 +273,7 @@
         <!-- culture -->
         <div class="urbn-culture">
             <div class="text-center cursor-pointer mb-7" id="night-mood">
-                <i class="p-4 mr-2 text-3xl rounded-full fa-solid fa-moon bg-neutral-400"></i>
+                <i class="p-2 px-3 mr-2 text-3xl rounded-full fa-solid fa-moon bg-neutral-400"></i>
                 <span class="font-bold text-[13.5px]" id="mood-text">NIGHT MOOD</span>
             </div>
             <div>

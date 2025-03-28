@@ -18,7 +18,7 @@ function displaytrendingProduct() {
             let trendCard = document.createElement('a');
             // trendCard.className = "trendCardId";
             trendCard.href = './viewProduct/viewProduct.html?id=' + product.id;
-            trendCard.classList.add('w-[48%]', 'lg:w-[24%]', 'lg:h-[58vh]', 'bg-white', 'rounded-2xl', 'sm:w-[30%]', 'md:w-[30%]', 'h-[40vh]', 'mb-3', 'pb-1');
+            trendCard.classList.add('w-[48%]', 'lg:w-[24%]', 'lg:h-[58vh]', 'bg-white', 'rounded-2xl', 'sm:w-[30%]', 'md:w-[30%]', 'h-[40vh]', 'mb-3', 'pb-1', 'trend-card');
             trendCard.innerHTML = `
                 <div class="relative  md:h-[70%] h-[60%]">
                     <img src="${product.image}" class="object-cover h-[95%] m-auto">
@@ -125,9 +125,21 @@ moodChange.addEventListener('click', () => {
 })
 
 // light and dark mood function
+let header = document.querySelector('.header');
+let logo = document.querySelector('#logo');
+let newsSlide = document.querySelector('#news-slide');
+let trdCard = document.querySelector('#trend-card');
+
+
 function nightMood() {
     document.body.classList.remove('bg-neutral-200');
     document.body.classList.add('bg-black', 'text-white');
+    header.classList.remove('bg-slate-50');
+    header.classList.add('bg-black');
+    logo.src = 'images/logo-removebg-preview (3).png';
+    newsSlide.classList.add('border-[1px]', 'border-b-white', 'border-t-0', 'border-l-0', 'border-r-0', 'mx-8');
+    trdCard.classList.remove('bg-white');
+    trdCard.classList.add('bg-black', 'border-[1px]', 'rounded-xl');
 };
 
 function lightMood() {
