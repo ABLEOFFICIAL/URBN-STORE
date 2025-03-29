@@ -67,7 +67,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     </div>
                 </div>`;
-        // checkOut.classList.remove("hidden");
+        let minus = showCartProduct.querySelectorAll("#minus");
+        let plus = showCartProduct.querySelectorAll("#plus");
+
+        let numOfCount = showCartProduct.querySelectorAll("#numOfCount");
+        // plus.forEach((btn) => {
+        //   btn.addEventListener("click", () => {
+        //     let count = +numOfCount.textContent;
+        //     console.log(count);
+
+        //     numOfCount.textContent = count++;
+        //   });
+        // });
       });
       // delete added product
       let parentP = document.querySelectorAll("#del-parent");
@@ -75,13 +86,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
       delProduct.forEach((del) => {
         del.addEventListener("click", function (e) {
-          e.target.parentElement.parentElement.remove();
+          e.target.parentElement.parentElement.parentElement.parentElement.remove();
           productListArray.pop();
+
+          //   update storage
+          localStorage.setItem("cart", JSON.stringify(productListArray));
         });
       });
     }
+    let checkOut = document.createElement("div");
+    checkOut.classList.add(
+      "flex",
+      "justify-center",
+      "items-center",
+      "w-full",
+      "m-auto"
+    );
+    checkOut.innerHTML = `<button class="block w-full py-3 my-5 text-lg font-bold text-white bg-black border-0 rounded-2xl">CHECKOUT</button>`;
+    showCartProduct.appendChild(checkOut);
   }
   addProduct();
 
   //   }
 });
+
+{
+  /* <div id="check-out" class="hidden">
+
+</div> */
+}
