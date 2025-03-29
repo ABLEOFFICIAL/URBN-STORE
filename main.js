@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Get the cart from localStorage
+  let productListArray = JSON.parse(localStorage.getItem("cart")) || [];
+  console.log(productListArray);
+
   // newsleteter slide
   let info1 = document.getElementById("info-1");
   let info2 = document.getElementById("info-2");
@@ -7,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // cart product
   let showCartProduct = document.getElementById("show-cart-product");
   let emptyCart = document.getElementById("empty-cart");
+  let checkOut = document.getElementById("check-out");
 
   function displaytrendingProduct() {
     fetch("./products-trend.json")

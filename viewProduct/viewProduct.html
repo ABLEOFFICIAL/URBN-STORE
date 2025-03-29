@@ -1,15 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-  <link href="../src/output.css" rel="stylesheet">
-</head>
-<body class="relative bg-neutral-200">
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../src/output.css" rel="stylesheet" />
+  </head>
+  <body class="relative bg-neutral-200">
     <!-- nav start -->
     <!--<div>
             <nav class="list-none flex justify-between w-[90vw] m-auto bg-slate-50 rounded-4xl p-3 items-center fixed left-5 bottom-5 z-20">
@@ -26,8 +33,7 @@
             </nav>
     </div> -->
     <!-- nav end -->
-        
-        
+
     <!-- sidebar start -->
     <!--<aside id="side-bar" class=" h-[100vh] w-[80vw] fixed top-0 left-0 z-20 bg-white hidden">
                     <div class="px-5 py-8  h-[35%]">
@@ -51,35 +57,52 @@
                     </div>
     </aside> -->
     <!-- sidebar end -->
-        
+
     <!-- cart section start -->
-    <aside id="cart-sctn" class=" h-[100vh] w-[100vw] fixed top-0 right-0 z-20 bg-neutral-200 overflow-y-scroll hidden">
-                <div class="p-5 flex justify-between w-[90vw] m-auto">
-                    <h2 class="text-3xl font-bold">Cart</h2>
-                    <i id="x-btn" class="pr-5 text-xl cursor-pointer fa-solid fa-x"></i>
-                </div><hr class="w-[90%] m-auto">
-                <div id="show-cart-product" class="flex flex-col h-[60vh] justify-center items-center">
-                    <div id="empty-cart" class="max-h-[60vh] overflow-y-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"><path fill="currentColor" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"/></svg>
-                        <span class="text-xl font-bold">Cart Is Empty</span>
-                    </div>
-                    <div id="check-out" class="hidden">
-                        <button class="block w-full py-3 my-5 text-lg font-bold text-white bg-black border-0 rounded-2xl">CHECKOUT</button>
-                    </div>
-                </div>
-        
+    <aside
+      id="cart-sctn"
+      class="h-[100vh] w-[100vw] fixed top-0 right-0 z-20 bg-neutral-200 overflow-y-scroll hidden"
+    >
+      <div class="p-5 flex justify-between w-[90vw] m-auto">
+        <h2 class="text-3xl font-bold">Cart</h2>
+        <i id="x-btn" class="pr-5 text-xl cursor-pointer fa-solid fa-x"></i>
+      </div>
+      <hr class="w-[90%] m-auto" />
+      <div
+        id="show-cart-product"
+        class="flex flex-col h-[60vh] justify-center items-center"
+      >
+        <div id="empty-cart" class="max-h-[60vh] overflow-y-auto"></div>
+      </div>
     </aside>
     <!-- cart section end -->
 
     <!-- show clicked item -->
     <section class="p-4">
-        <div class="relative p-4 header flex justify-between">
-            <i id="back-btn" class="fa-solid fa-chevron-left top-[40%] font-bold text-2xl cursor-pointer"></i>
-            <h2 class="text-xl font-bold text-center">PRODUCT DETAIL</h2>
-            <i id="cart-icon" class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"/></svg></i>
-        </div>
-        <div id="item-display" class="product-sctn w-[100%] flex gap-7 flex-wrap items-center mt-3">
-            <!-- <div class="m-auto text-center">
+      <div class="relative p-4 header flex justify-between">
+        <i
+          id="back-btn"
+          class="fa-solid fa-chevron-left top-[40%] font-bold text-2xl cursor-pointer"
+        ></i>
+        <h2 class="text-xl font-bold text-center">PRODUCT DETAIL</h2>
+        <i id="cart-icon" class="cursor-pointer"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"
+            /></svg
+        ></i>
+      </div>
+      <div
+        id="item-display"
+        class="product-sctn w-[100%] flex gap-7 flex-wrap items-center mt-3"
+      >
+        <!-- <div class="m-auto text-center">
                 <img id="clicked-pro-img" src="" class="w-full rounded-3xl h-[50vh] object-cover ">
             </div>
             <div class="p-2">
@@ -93,8 +116,8 @@
                 <button id="add-to-cart" class="bg-black text-white font-bold rounded-xl py-2.5 px-4">ADD TO CART</button>
                 <p id="clicked-pro-description" class="my-4 w-[90%]"></p>
             </div> -->
-        </div>
-        <!--<div id="featured-products">
+      </div>
+      <!--<div id="featured-products">
              generate dynamically
         </div>-->
     </section>
@@ -103,5 +126,5 @@
     <script src="../addToCart/addToCart.js"></script>
     <!-- <script src="../navigation/nav.js"></script> -->
     <!-- <script src="../scroll-effect/scroll.js"></script> -->
-</body>
+  </body>
 </html>
