@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", () => {
       productListArray.forEach((item) => {
         showCartProduct.classList.add("p-3");
         showCartProduct.innerHTML += `
-                <div class="w-[95%] m-auto">
+                <div class="w-full m-auto">
                     <div id="del-parent" class="flex mb-2 justify-start gap-3 items-center w-[95%] m-auto h-auto p-6 bg-white rounded-2xl">
                         <div class="w-[26%]">
-                            <img src="${item.image}" class="w-20 h-20 rounded-lg">
+                            <img src="${item.image}" class="w-20 rounded-lg">
                         </div>
                         <div class="w-[75%] flex flex-col gap-2">
                             <div class="flex justify-between items-center">
